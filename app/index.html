@@ -9,6 +9,13 @@
     <link rel="apple-touch-icon" href="apple-touch-icon.png">
     <!-- Place favicon.ico in the root directory -->
 
+      
+      
+    <!-- Fonts -->
+      
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Roboto+Slab:300' rel='stylesheet' type='text/css'>  
+    
     <!-- build:css styles/vendor.css -->
     <!-- bower:css -->
     <!-- endbower -->
@@ -29,69 +36,99 @@
       
     <div class="container-fluid">
         
+                <!--- HERO --->
         <div class="hero">
             <div class="jumbotron hero-image">
+                
+                <!--- NAV --->
                 <nav class="nav">
-                    <a href="#"><img class="logo pull-left" src="images/castaway_logo.png"></a>
+                    <a href="#"><img class="hero-logo pull-left" src="images/castaway_logo.png"></a>
                     <a href="#"><button class="btn pull-right sign-in">Sign In</button></a>
                     <a href="#"><button class="btn pull-right sign-up">Sign Up</button></a>
                 </nav>
+                
+                <!--- HERO CONTENT --->
                 <h1 class="hero-title">The Way Radio Should Be</h1>
-                <p class="hero-description">Castaway is a free podcasting app that allows you to stream, save, and collect your favorite shows in one place.</p>
+                <p class="light-on-dark hero-description">Castaway is a free podcasting app that allows you to stream, save, and <br>collect your favorite shows in one place.</p>
                 <input type="text" class="form-control search-bar" placeholder="Search for Podcasts">
-                <button class="btn search-btn">Go!</button>
                 <button class="btn call-to-action">Sign Up For Free!</button>
             </div>
         </div>
-        
-        <div class="container">
+                
+                <!--- RECOMMENDED AUDIO --->
+        <div class="container recommended-audio">
             <div class="top-rated-station">
-                <div class="title">
-                    <h2>Top Rated Stations</h2>
+                <div>
+                    <h3 class="section-title">Top Rated Stations</h3>
                 </div>
                 <div class="top-station row">
-                    <div class="col-md-2"><a href="#"><img class="podcast-icons" src="images/podcast-icons/sysk.jpg"></a></div>
-                    <div class="col-md-2"><a href="#"><img class="podcast-icons" src="images/podcast-icons/freakonomics.jpg"></a></div>
-                    <div class="col-md-2"><a href="#"><img class="podcast-icons" src="images/podcast-icons/Lore.jpg"></a></div>
-                    <div class="col-md-2"><a href="#"><img class="podcast-icons" src="images/podcast-icons/wtfmarc.png"></a></div>
-                    <div class="col-md-2"><a href="#"><img class="podcast-icons" src="images/podcast-icons/upnext.jpeg"></a></div>
+                    <a class="col-md-2" href="#"><img class="podcast-icons" src="images/podcast-icons/sysk.jpg"></a>
+                    <a class="col-md-2" href="#"><img class="podcast-icons" src="images/podcast-icons/freakonomics.jpg"></a>
+                    <a class="col-md-2" href="#"><img class="podcast-icons" src="images/podcast-icons/Lore.jpg"></a>
+                    <a class="col-md-2" href="#"><img class="podcast-icons" src="images/podcast-icons/wtfmarc.png"></a>
+                    <a class="col-md-2" href="#"><img class="podcast-icons" src="images/podcast-icons/upnext.jpeg"></a>
                 </div>
             </div>
             <div class="recent-episode">
-                <div class="title">
-                    <h2>Most Recent Episodes</h2>
+                <div>
+                    <h3 class="section-title">Most Recent Episodes</h3>
                 </div>
-                <div class="recent-episode row">
-                    <div class="col-md-2"><a href="#"><img class="podcast-icons" src="images/podcast-icons/sysk.jpg"></a></div>
-                    <div class="col-md-2"><a href="#"><img class="podcast-icons" src="images/podcast-icons/freakonomics.jpg"></a></div>
-                    <div class="col-md-2"><a href="#"><img class="podcast-icons" src="images/podcast-icons/Lore.jpg"></a></div>
-                    <div class="col-md-2"><a href="#"><img class="podcast-icons" src="images/podcast-icons/wtfmarc.png"></a></div>
-                    <div class="col-md-2"><a href="#"><img class="podcast-icons" src="images/podcast-icons/upnext.jpeg"></a></div>
+                <div class="recent-episode-selections row">
+                    <a class="col-md-2" href="#"><img class="podcast-icons" src="images/podcast-icons/theflophouse.jpeg"></a>
+                    <a class="col-md-2" href="#"><img class="podcast-icons" src="images/podcast-icons/99invisible.jpg"></a>
+                    <a class="col-md-2" href="#"><img class="podcast-icons" src="images/podcast-icons/deathsexmoney.jpg"></a>
+                    <a class="col-md-2" href="#"><img class="podcast-icons" src="images/podcast-icons/billmaher.jpeg"></a>
+                    <a class="col-md-2" href="#"><img class="podcast-icons" src="images/podcast-icons/serial.jpeg"></a>
+                </div> 
+                <div class="recent-episode-selections row">
+                    <a class="col-md-2" href="#"><img class="podcast-icons" src="images/podcast-icons/modernlove.png"></a>
+                    <a class="col-md-2" href="#"><img class="podcast-icons" src="images/podcast-icons/waitwait.jpg"></a>
+                    <a class="col-md-2" href="#"><img class="podcast-icons" src="images/podcast-icons/Nerdist_Podcast_logo.png"></a>
+                    <a class="col-md-2" href="#"><img class="podcast-icons" src="images/podcast-icons/NoteToSelf.png"></a>
+                    <a class="col-md-2" href="#"><img class="podcast-icons" src="images/podcast-icons/anotherround.png"></a>
                 </div> 
             </div>
         </div> 
-        
-        <div class="jumbotron download-app">
-            <div class="container">
+                <!--- APP --->
+        <div class="jumbotron download-app row">
+            <div class="col-md-6 pull-right light-on-dark">
                 <h2 class="app-tag-line">On the go? <span class="emphasis">Get the app!</span></h2>
-                <p>Our mobile app syncs perfectly with your online account, allowing you seamless entertainment from home to the office.</p>
+                <p>Our mobile app syncs perfectly with your online<br>account, allowing you seamless entertainment<br>from home to the office.</p>
+                <img class="purchase-app apple" src="images/app-store.png">
+                <img class="purchase-app google" src="images/google-play.png">
             </div>
         </div>
-        
+                <!--- CREATOR SIGN UP --->
         <div class="creator-sign-up">
             <div class="container">
-                <h2 class="creator">Do you have a <span class="emphasis">great new show</span> and now way to <span class="emphasis">share it?</span></h2>
-                <p>We are always looking for new content. Whether you are a network or a lone voice on the waves, we offer excellent creator support and plenty of resources.</p>
+                <h2 class="creator">Do you have a <span class="emphasis">great new show</span> and<br>no way to <span class="emphasis">share it?</span></h2>
+                <p>We are always looking for new content. Whether you are a network or<br>a lone voice on the waves, we offer excellent creator support and<br>plenty of resources.</p>
                 <button class="btn call-to-action">Sign Up As A Creator!</button>
             </div>
         </div>
-        
+                <!--- CALL TO ACTION--->
         <div class="jumbotron final-action-call">
-            <div class="container">
-                <h2 class="final-call emphasis">Share, Save, Listen</h2>
-                <p>Create stations, share your favorite episodes, and connect with podcasters. All for free.</p>
-                <button class="btn call-to-action final-btn">Start An Account!</button>
+              <div class="row">  
+                <div class="col-md-6 pull-right light-on-dark">
+                    <h2 class="final-call"><span class="emphasis">Share, Save, Listen</span></h2>
+                    <p>Create stations, share your favorite episodes, and connect with podcasters. All for free.</p>
+                    <button class="btn call-to-action final-btn">Start An Account!</button>
+                </div>
             </div>
+                <!--- FOOTER --->
+            <div class="footer">
+                <ul class="footer-links">
+                    <li><a href="#">About Us</a></li>
+                    <li><a href="#">Blog</a></li>
+                    <li><a href="#">Contact</a></li>
+                    <li><a href="#">Terms & Conditions</a></li>
+                    <li><a href="#">Legal</a></li>
+                    <li><a href="#">Privacy Policy</a></li>
+                </ul>
+                <p class="copyright">All Rights Reserved, Castaway 2016 (c)</p>
+                <img class="logo" src="images/castaway_logo.png">
+            </div>
+            
         </div>
         
     </div>

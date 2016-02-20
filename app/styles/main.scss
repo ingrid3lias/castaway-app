@@ -11,11 +11,217 @@ $icon-font-path: '../fonts/';
   padding: 0.2em 0;
 }
 
-/* Space out content a bit */
-body {
-  padding-top: 20px;
-  padding-bottom: 20px;
+
+/* General Styles */
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Open Sans';
 }
+
+h1 {
+    font-size: 58px;
+}
+
+h2 {
+    font-size: 48px;
+}
+
+h3 {
+    font-size: 38px;
+}
+
+p {
+    font-family: 'Roboto Slab';
+    font-size: 22px;
+}
+
+p.light-on-dark,
+.light-on-dark {
+    color: #FFFFFF;
+}
+
+h2 span.emphasis {
+    font-weight: 700;
+}
+
+.container-fluid {
+    padding: 0;
+}
+
+.container {
+    padding: 0;
+    margin: 0 150px;
+    text-align: center;
+}
+
+.container .section-title {
+    text-align: center;
+    font-weight: 500;
+    letter-spacing: 3.04px;
+    font-size: 38px;
+}
+
+.col-md-6 {
+    padding-right: 90px;
+}
+
+.jumbotron {
+    margin-bottom: 0;
+}
+
+/* Podcast icon styles */
+
+img.podcast-icons {
+    height: 200px;
+    border-radius: 9px;
+    margin-right: 10px;
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, .5);
+}
+
+/* Button Styles */
+
+button.call-to-action {
+    color: #FFFFFF;
+    font-weight: 500;
+    letter-spacing: 1.6px;
+    background-color: #EA6045;
+    margin-top: 40px;
+    margin-bottom: 80px;
+    padding: 1rem 2.5rem;
+}
+
+button.call-to-action.final-btn {
+    background-color: #F8CA4D;
+}
+
+/* Nav */
+
+.hero-logo {
+    margin-top: 5px;
+}
+
+button.sign-in,
+button.sign-up {
+    margin-top: 30px;
+    width: 110px;
+    letter-spacing: 1.6px;
+}
+
+button.sign-in {
+    color: #FFFFFF;
+    background-color: transparent;
+    border: 1px solid #FFFFFF;
+}
+
+button.sign-up {
+    color: #333333;
+    background-color: #FFFFFF;
+    margin-right: 40px;
+}
+
+
+/* Hero Content */
+
+.hero-image {
+    background-image: url("../images/header_image.png");
+    padding: 0 0;
+    margin: 0;
+    border-radius: 0px;
+}
+
+.hero-image .hero-title {
+    font-weight: 600;
+    color: #FFFFFF;
+    text-shadow: 2px 2px 4px #000000;
+    letter-spacing: 3.04px;
+    margin-top: 250px;
+    position: inherit;
+}
+
+.hero-image .hero-description {
+    margin-bottom: 20px;
+}
+
+input.search-bar {
+    width: 650px;
+    margin: 0 auto;
+}
+
+/* Recommended Audio */
+
+.recommended-audio .section-title {
+    margin-top: 80px;
+    margin-bottom: 80px;
+}
+
+.recent-episode-selections {
+    margin-bottom: 40px;
+}
+
+/* App Selling Point */
+
+.download-app {
+    background-image: url(../images/app_image.png);
+    margin: 0;
+}
+
+.download-app .app-tag-line {
+    margin-top: 52px;
+    margin-bottom: 20px;
+}
+
+.download-app p {
+    margin-bottom: 40px;
+}
+
+.download-app .purchase-app {
+    margin-bottom: 52px;
+}
+
+.download-app .google {
+    margin-left: 40px;
+    margin-right: 0;
+}
+
+.download-app .app-tag-line,
+.download-app p,
+.final-action-call .final-call,
+.final-action-call p {
+    text-align: right;
+}
+
+/* Creator Call To Action */
+
+.creator {
+    margin-top: 80px;
+    margin-bottom: 20px;
+}
+
+.creator-sign-up p {
+    margin-bottom: 0;
+}
+
+/* Final Call To Action */
+
+.final-action-call {
+    background-image: url(../images/mic_image.png);
+}
+
+.final-action-call .final-call {
+    margin-top: 52px;
+    margin-bottom: 20px;
+}
+
+.final-action-call p {
+    margin-bottom: 0;
+}
+
+/* Footer */
+
+.footer {
+    padding: 0;
+}
+
 
 /* Everything but the jumbotron gets side spacing for mobile first views */
 .header,
@@ -25,25 +231,8 @@ body {
   padding-right: 15px;
 }
 
-/* Custom page header */
-.header {
-  border-bottom: 1px solid #e5e5e5;
 
-  /* Make the masthead heading the same height as the navigation */
-  h3 {
-    margin-top: 0;
-    margin-bottom: 0;
-    line-height: 40px;
-    padding-bottom: 19px;
-  }
-}
 
-/* Custom page footer */
-.footer {
-  padding-top: 19px;
-  color: #777;
-  border-top: 1px solid #e5e5e5;
-}
 
 .container-narrow > hr {
   margin: 30px 0;
@@ -52,19 +241,7 @@ body {
 /* Main marketing message and sign up button */
 .jumbotron {
   text-align: center;
-  border-bottom: 1px solid #e5e5e5;
 }
-
-/* podcast icon styles */
-
-
-img.podcast-icons {
-    height: 200px;
-    border-radius: 9px;
-    margin-right: 10px;
-}
-
-
 
 /* Supporting marketing content */
 .marketing {
