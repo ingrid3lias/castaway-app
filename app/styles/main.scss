@@ -101,12 +101,6 @@ button.call-to-action.final-btn {
     background-color: #F8CA4D;
 }
 
-/* Nav */
-
-.hero-logo {
-    margin-top: 5px;
-}
-
 button.sign-in,
 button.sign-up {
     margin-top: 30px;
@@ -126,181 +120,12 @@ button.sign-up {
     margin-right: 40px;
 }
 
+/* Nav */
 
-/* Hero Content */
-
-.hero-image {
-    background-image: url("../images/header_image.png");
-    background-repeat: no-repeat;
-    background-size: cover;
-    padding: 0 0;
-    margin: 0;
-    border-radius: 0px;
-    text-align: center;
+.nav-logo {
+    margin-top: 5px;
 }
 
-.hero-image .hero-title {
-    font-weight: 600;
-    color: #FFFFFF;
-    text-shadow: 2px 2px 4px #000000;
-    letter-spacing: 3.04px;
-    margin-top: 250px;
-    position: inherit;
-}
-
-.hero-image .hero-description {
-    margin-bottom: 20px;
-}
-
-input.search-bar {
-    width: 650px;
-    margin: 0 auto;
-}
-
-/* Recommended Audio */
-
-.recommended-audio .section-title {
-    margin-top: 80px;
-    margin-bottom: 80px;
-}
-
-.recent-episode-selections {
-    margin-bottom: 40px;
-}
-
-div.col-md-2 {
-    width: 200px;
-    padding: 0;
-    margin: 0 20px;
-}
-
-h5.item-title {
-    font-size: 16px;
-    font-weight: 700;
-    color: #333333;
-    margin-bottom: 0;
-}
-
-h6.item-creator {
-    color: #333333;
-    font-size: 14px;
-    margin-top: 0;
-}
-
-/* App Selling Point */
-
-div.jumbotron.download-app.row {
-    padding: 0;
-}
-
-.download-app {
-    background-image: url(../images/app_image.png);
-    background-repeat: no-repeat;
-    background-size: cover;
-    margin: 0;
-}
-
-.download-app .app-tag-line {
-    margin-top: 80px;
-    margin-bottom: 20px;
-}
-
-.download-app p {
-    margin-bottom: 40px;
-}
-
-.download-app .purchase-app {
-    margin-bottom: 80px;
-}
-
-.download-app .google {
-    margin-left: 40px;
-    margin-right: 0;
-}
-
-.download-app .app-tag-line,
-.download-app p,
-.final-action-call .final-call,
-.final-action-call p {
-    text-align: right;
-}
-
-/* Creator Call To Action */
-
-.creator {
-    margin-top: 80px;
-    margin-bottom: 20px;
-}
-
-.creator-sign-up p {
-    margin-bottom: 0;
-}
-
-/* Final Call To Action */
-
-.final-action-call {
-    background-image: url(../images/mic_image.png);
-    background-repeat: no-repeat;
-    background-size: cover;
-}
-
-.final-action-call .final-call {
-    margin-top: 52px;
-    margin-bottom: 20px;
-}
-
-.final-action-call p {
-    margin-bottom: 0;
-}
-
-div.col-md-6.pull-right.light-on-dark {
-    padding-right: 150px;
-}
-
-/* Footer */
-
-div.jumbotron.final-action-call {
-    padding: 0;
-}
-
-.final-action-call .footer {
-    padding: 0;
-    padding-top: 20px;
-    background-color: rgba(0,0,0,.5);
-}
-
-ul.footer-links {
-    list-style: none;
-    text-align: center;
-    padding: 0;
-    margin-bottom: 20px;
-}
-
-ul.footer-links a,
-ul.footer-links li {
-    color: #CCCCCC;
-    display: inline;
-    font-size: 16px;
-}
-
-ul.footer-links a:hover {
-    color: #F8CA4D;
-}
-
-ul.footer-links li {
-    margin: 0 .5rem;
-}
-
-p.copyright {
-    text-align: center;
-    color: #CCCCCC;
-    font-size: 16px;
-    padding-bottom: 20px;
-}
-
-img.footer-logo {
-    padding-left: 20px;
-}
 
 
 /* Responsive: Portrait tablets and up */
