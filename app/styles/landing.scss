@@ -10,7 +10,7 @@
     text-align: center;
 }
 
-.hero-image .hero-title {
+.hero-title {
     font-weight: 600;
     color: #FFFFFF;
     text-shadow: 2px 2px 4px #000000;
@@ -19,7 +19,7 @@
     padding: 0 3rem;
 }
 
-.hero-image .hero-description {
+.hero-description {
     margin-bottom: 2rem;
     padding: 0 3rem;
 }
@@ -31,8 +31,7 @@
 }
 
 .section-title {
-    margin-top: 80px;
-    margin-bottom: 80px;
+    margin: 80px 0;
     padding: 0;
 }
 
@@ -62,7 +61,7 @@ h6.item-creator {
     display: flex;
 }
 
-.download-app .app-tag-line {
+.app-tag-line {
     margin-top: 8rem;
     margin-bottom: 2rem;
 }
@@ -81,7 +80,7 @@ h6.item-creator {
     padding: .5rem 1rem;
 }
 
-/* Creator Call To Action */
+/* Audio-Creator Call To Action */
 
 .creator-sign-up {
     display: flex;
@@ -159,11 +158,11 @@ p.copyright {
     margin: auto auto;
 }
 
-/* Responsive: Portrait tablets and up */
-@media screen and (max-width: 768px) {
+/* Responsive: Portrait tablets */
+@media (max-width: 800px) {
   
     .download-app {
-        background: linear-gradient(rgba(0, 0, 0, 0.45), 
+        background: linear-gradient(rgba(0, 0, 0, 0.6), 
             rgba(0, 0, 0, 0.45)),
             url(../images/app_image.png) no-repeat;
         background-size: cover;
@@ -171,10 +170,70 @@ p.copyright {
     }
     
     .final-action-call {
-        background: linear-gradient(rgba(0, 0, 0, 0.45), 
+        background: linear-gradient(rgba(0, 0, 0, 0.6), 
             rgba(0, 0, 0, 0.45)),
             url(../images/mic_image.png) no-repeat;
         background-size: cover;
     
     }
+    
+    .hero-title {
+        font-size: 48px;
+        margin-top: 150px;
+    }
+    
+    .section-title {
+        margin: 40px 0;
+    }
+    
+    .section-title,
+    .app-tag-line,
+    .creator,
+    .final-call {
+        font-size: 38px;
+    }
+    
+    p {
+        font-size: 16px;
+    }
+    
+    input.search-bar {
+        width: 500px;
+    }
+    
+    h6.item-creator {
+    margin-bottom: 30px;
+    }
   }
+
+@media (max-width: 400px) {
+    
+    .hero-title {
+        font-size: 38px;
+        margin-top: 80px;
+    }
+    
+    .section-title,
+    .app-tag-line,
+    .creator,
+    .final-call {
+        font-size: 32px;
+    }
+    
+    p {
+        font-size: 14px;
+    }
+    
+    input.search-bar {
+        width: 300px;
+    }
+    
+    ul.footer-links a,
+    ul.footer-links li {
+        font-size: 12px;
+    }
+    
+    .footer {
+        padding: 0 1rem;
+    }
+}

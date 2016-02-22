@@ -171,4 +171,16 @@ ul.account-buttons {
     display: flex;
 }
 
+/* MEDIA QUERIES */
+
+@media (max-width: 800px) {
+    .nav {
+        background-color: rgba(0,0,0,.5);
+    }
+}
+
+@media (max-width: 400px) {
+    
+}
+
 
