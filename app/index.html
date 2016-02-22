@@ -35,34 +35,55 @@
       <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
     <![endif]-->
       
-    <div class="container-fluid">
+    
         
-                <!--- HERO --->
-        <div class="hero">
-            <div class="jumbotron hero-image">
-                
+                <!--- HEADER --->
+        <div class="hero">   
+            
                 <!--- NAV --->
-                <nav class="nav">
-                    <a href="#"><img class="nav-logo pull-left" src="images/castaway_logo.png"></a>
-                    <a href="#"><button class="btn pull-right sign-in">Sign In</button></a>
-                    <a href="#"><button class="btn pull-right sign-up">Sign Up</button></a>
+            
+                <nav class="nav row">
+                    <div class="col-md-3 logo-box">
+                        <a href="#"><img class="nav-logo" src="images/castaway_logo.png"></a>
+                    </div>
+                    <div class="col-md-6 nav-search">
+                        <input type="text" class="form-control search-bar nav-bar" placeholder="Search for Podcasts">
+                    </div>
+                    <div class="col-md-3 nav-links">
+                        <ul class="account-buttons">
+                            <li><a href="#"><button class="btn sign-in">Sign In</button></a></li>
+                            <li><a href="#"><button class="btn sign-up">Sign Up</button></a></li>
+                        </ul>  
+                    </div>
                 </nav>
-                
+            
                 <!--- HERO CONTENT --->
-                <h1 class="hero-title">The Way Radio Should Be</h1>
-                <p class="light-on-dark hero-description">Castaway is a free podcasting app that allows you to stream, save, and <br>collect your favorite shows in one place.</p>
-                <input type="text" class="form-control search-bar" placeholder="Search for Podcasts">
-                <button class="btn call-to-action">Sign Up For Free!</button>
+            
+            <div class="hero-image row">
+                <div class="col-md-2"></div>
+                <div class="col-md-8">
+                    <h1 class="hero-title">The Way Radio Should Be</h1>
+                    <p class="light-on-dark hero-description">Castaway is a free podcasting app that allows you to stream, save, and collect your favorite shows in one place.</p>
+                    <input type="text" class="form-control search-bar" placeholder="Search for Podcasts">
+                    <button class="btn call-to-action">Sign Up For Free!</button>
+                </div>
+                <div class="col-md-2"></div>
             </div>
+            
         </div>
                 
                 <!--- RECOMMENDED AUDIO --->
-        <div class="container recommended-audio">
-            <div class="top-rated-station">
+        <div class="recommended-audio">
+            
+            <div class="top-rated-station row">
+                
                 <div>
-                    <h3 class="section-title">Top Rated Stations</h3>
+                    <h3 class="section-title col-md-12">Top Rated Stations</h3>
                 </div>
+                
                 <div class="top-station row">
+                    
+                    <div class="col-md-1"></div>
                     <div class="col-md-2">
                         <a href="#"><img class="podcast-icons" src="images/podcast-icons/sysk.jpg"></a>
                         <h5 class="item-title">All About The Brain</h5>
@@ -88,13 +109,18 @@
                         <h5 class="item-title">This Week in Tech</h5>
                         <a href="#"><h6 class="item-creator">mark_zz</h6></a>
                     </div>
+                    <div class="col-md-1"></div>
                 </div>
             </div>
-            <div class="recent-episode">
+            
+            <div class="recent-episode row">
                 <div>
-                    <h3 class="section-title">Most Recent Episodes</h3>
+                    <h3 class="section-title col-md-12">Most Recent Episodes</h3>
                 </div>
+                
                 <div class="recent-episode-selections row">
+                    
+                    <div class="col-md-1"></div>
                     <div class="col-md-2">
                         <a href="#"><img class="podcast-icons" src="images/podcast-icons/theflophouse.jpeg"></a>
                         <h5 class="item-title">The Flop House</h5>
@@ -120,9 +146,12 @@
                         <h5 class="item-title">Serial</h5>
                         <a href="#"><h6 class="item-creator">This American Life</h6></a>
                     </div>
+                    <div class="col-md-1"></div>
                 </div> 
+                
                 <div class="recent-episode-selections row">
                     
+                    <div class="col-md-1"></div>
                     <div class="col-md-2">
                         <a href="#"><img class="podcast-icons" src="images/podcast-icons/modernlove.png"></a>
                         <h5 class="item-title">Modern Love</h5>
@@ -148,60 +177,80 @@
                         <h5 class="item-title">Another Round</h5>
                         <a href="#"><h6 class="item-creator">BuzzFeed</h6></a>
                     </div>
+                    <div class="col-md-1"></div>
                 </div> 
+                
             </div>
         </div> 
                 <!--- APP --->
-        <div class="jumbotron download-app row">
-            <div class="col-md-6 pull-right light-on-dark">
+        
+        <div class="download-app row">
+            <div class="col-md-6"></div>
+            
+            <div class="col-md-6 light-on-dark">
                 <h2 class="app-tag-line">On the go? <span class="emphasis">Get the app!</span></h2>
-                <p>Our mobile app syncs perfectly with your online<br>account, allowing you seamless entertainment<br>from home to the office.</p>
-                <img class="purchase-app apple" src="images/app-store.png">
-                <img class="purchase-app google" src="images/google-play.png">
+                <p>Our mobile app syncs perfectly with your online account, allowing you seamless entertainment from home to the office.</p>
+                
+                <div class="purchase-app">
+                    <a href="www.apple.com"><img class="apple" src="images/app-store.png"></a>
+                    <a href="www.googleplay.com"><img class="google" src="images/google-play.png"></a>
+                </div>
             </div>
-        </div>
-                <!--- CREATOR SIGN UP --->
-        <div class="creator-sign-up">
-            <div class="container">
-                <h2 class="creator">Do you have a <span class="emphasis">great new show</span> and<br>no way to <span class="emphasis">share it?</span></h2>
-                <p>We are always looking for new content. Whether you are a network or<br>a lone voice on the waves, we offer excellent creator support and<br>plenty of resources.</p>
-                <button class="btn call-to-action">Sign Up As A Creator!</button>
-            </div>
+            
         </div>
         
-                <!--- CALL TO ACTION--->
-        <div class="jumbotron final-action-call">
-            <div class="row">  
-                <div class="col-md-6 pull-right light-on-dark">
-                    <h2 class="final-call"><span class="emphasis">Share, Save, Listen</span></h2>
+                <!--- CREATOR SIGN UP --->
+        
+        <div class="creator-sign-up row">
+            <div class="col-md-2"></div>
+            <div class="col-md-8">
+                <h2 class="creator">Do you have a <span class="emphasis">great new show</span> and no way to <span class="emphasis">share it?</span></h2>
+                <p>We are always looking for new content. Whether you are a network or a lone voice on the waves, we offer excellent creator support and plenty of resources.</p>
+                <button class="btn call-to-action">Sign Up As A Creator!</button>
+            </div>
+            <div class="col-md-2"></div>
+        </div>
+        
+                <!--- FINAL CALL TO ACTION--->
+        
+        <div class="final-action-call">
+            
+            <div class="action-call row">  
+                <div class="col-md-6"></div>
+                <div class="col-md-6 light-on-dark">
+                    <h2 class="final-call"><span class="emphasis">Listen, Save, Share</span></h2>
                     <p>Create stations, share your favorite episodes, and connect with podcasters. All for free.</p>
-                    <button class="btn call-to-action final-btn pull-right">Start An Account!</button>
+                    <button class="btn call-to-action final-btn">Start An Account!</button>
                 </div>
             </div>
             
                 <!--- FOOTER --->
-            <div class="footer">
-                <ul class="footer-links">
-                    <li><a href="#">About Us</a></li>
-                    <li>|</li>
-                    <li><a href="#">Blog</a></li>
-                    <li>|</li>
-                    <li><a href="#">Contact</a></li>
-                    <li>|</li>
-                    <li><a href="#">Terms & Conditions</a></li>
-                    <li>|</li>
-                    <li><a href="#">Legal</a></li>
-                    <li>|</li>
-                    <li><a href="#">Privacy Policy</a></li>
-                </ul>
-                <p class="copyright">All Rights Reserved, Castaway 2016 (c)</p>
-                
-               <!-- <img class="footer-logo" src="images/castaway_logo.png"> -->
-            </div>
+            
+            <nav class="nav footer row">
+                    <div class="col-md-3 nav-links">
+                        <p class="copyright">All Rights Reserved, Castaway 2016 &copy;</p>
+                    </div>
+                    <div class="col-md-6 nav-links">
+                        <ul class="footer-links">
+                            <li><a href="#">About Us</a></li>
+                            <li>|</li>
+                            <li><a href="#">Blog</a></li>
+                            <li>|</li>
+                            <li><a href="#">Contact</a></li>
+                            <li>|</li>
+                            <li><a href="#">Terms & Conditions</a></li>
+                            <li>|</li>
+                            <li><a href="#">Legal</a></li>
+                            <li>|</li>
+                            <li><a href="#">Privacy Policy</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-md-3 logo-box">
+                        <img class="footer-logo" src="images/castaway_logo.png"> 
+                    </div>
+                </nav>
             
         </div>
-        
-    </div>
     
     <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
     <script>

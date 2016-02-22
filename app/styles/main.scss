@@ -2,6 +2,7 @@ $icon-font-path: '../fonts/';
 
 // bower:scss
 @import "bower_components/bootstrap-sass/assets/stylesheets/_bootstrap.scss";
+@import "bower_components/font-awesome/scss/font-awesome.scss";
 // endbower
 
 .browserupgrade {
@@ -15,7 +16,7 @@ $icon-font-path: '../fonts/';
 /* General Styles */
 
 html {
-    width: 100%;
+    text-align: center;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -43,6 +44,11 @@ a:-webkit-any-link {
     text-decoration: none;
 }
 
+li {
+    display: inline;
+    margin: 0 1rem;
+}
+
 p.light-on-dark,
 .light-on-dark {
     color: #FFFFFF;
@@ -52,29 +58,10 @@ h2 span.emphasis {
     font-weight: 700;
 }
 
-.container-fluid {
-    padding: 0;
-}
-
-.container {
-    padding: 0;
-    margin: 0 150px;
-    text-align: center;
-}
-
-.container .section-title {
-    text-align: center;
+.section-title {
     font-weight: 500;
     letter-spacing: 3.04px;
     font-size: 38px;
-}
-
-.col-md-6 {
-    padding-right: 90px;
-}
-
-.jumbotron {
-    margin-bottom: 0;
 }
 
 /* Podcast icon styles */
@@ -92,18 +79,27 @@ button.call-to-action {
     font-weight: 500;
     letter-spacing: 1.6px;
     background-color: #EA6045;
-    margin-top: 40px;
-    margin-bottom: 80px;
+    margin-top: 4rem;
+    margin-bottom: 8rem;
     padding: 1rem 2.5rem;
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, .5);
 }
 
 button.call-to-action.final-btn {
     background-color: #F8CA4D;
 }
 
+button.call-to-action:hover {
+    color: #FFFFFF;
+    background-color: #F8CA4D;
+}
+
+button.call-to-action.final-btn:hover {
+    background-color: #EA6045; 
+}
+
 button.sign-in,
 button.sign-up {
-    margin-top: 30px;
     width: 110px;
     letter-spacing: 1.6px;
 }
@@ -117,38 +113,62 @@ button.sign-in {
 button.sign-up {
     color: #333333;
     background-color: #FFFFFF;
-    margin-right: 40px;
+}
+
+button.sign-up:hover,
+button.sign-in:hover {
+    background-color: #EA6045;
+    color: #FFFFFF;
+    border: transparent;
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, .5);
 }
 
 /* Nav */
 
-.nav-logo {
-    margin-top: 5px;
+nav, .logo-box, .nav-links, .nav-search {
+    height: 100px;
+}
+
+img.nav-logo {
+    margin: .5rem 0;
+}
+
+/*nav {
+    background-color: #3F5666;
+}*/
+
+/*.logo-box {
+    background-color: #EA6045;
+}*/
+
+.nav-search {
+    display: flex;
+    padding: 0;
+}
+
+input.form-control.search-bar {
+    margin: auto auto;
+}
+
+input.search-bar {
+    width: 650px;
+    margin: 0 auto;
+}
+
+input.nav-bar {
+    display: none;
+}
+
+ul.account-buttons {
+    list-style: none;
+    padding: 0;
+    margin: auto auto;
+    
+}
+
+.nav-links {
+    padding: 0;
+    display: flex;
 }
 
 
-
-/* Responsive: Portrait tablets and up */
-@media screen and (max-width: 768px) {
-  .container {
-    max-width: 730px;
-  }
-
-  /* Remove the padding we set earlier */
-  .header,
-  .marketing,
-  .footer {
-    padding-left: 0;
-    padding-right: 0;
-  }
-
-  /* Space out the masthead */
-  .header {
-    margin-bottom: 30px;
-  }
-
-  /* Remove the bottom border on the jumbotron for visual effect */
-  .jumbotron {
-    border-bottom: 0;
-  }
-}

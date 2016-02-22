@@ -1,12 +1,12 @@
 /* Hero Content */
 
-.hero-image {
+.hero {
     background-image: url("../images/header_image.png");
     background-repeat: no-repeat;
     background-size: cover;
-    padding: 0 0;
-    margin: 0;
-    border-radius: 0px;
+}
+
+.hero-image {
     text-align: center;
 }
 
@@ -16,33 +16,28 @@
     text-shadow: 2px 2px 4px #000000;
     letter-spacing: 3.04px;
     margin-top: 250px;
-    position: inherit;
+    padding: 0 3rem;
 }
 
 .hero-image .hero-description {
-    margin-bottom: 20px;
-}
-
-input.search-bar {
-    width: 650px;
-    margin: 0 auto;
+    margin-bottom: 2rem;
+    padding: 0 3rem;
 }
 
 /* Recommended Audio */
 
-.recommended-audio .section-title {
+.recommended-audio {
+    text-align: center;
+}
+
+.section-title {
     margin-top: 80px;
     margin-bottom: 80px;
+    padding: 0;
 }
 
 .recent-episode-selections {
     margin-bottom: 40px;
-}
-
-div.col-md-2 {
-    width: 200px;
-    padding: 0;
-    margin: 0 20px;
 }
 
 h5.item-title {
@@ -58,45 +53,39 @@ h6.item-creator {
     margin-top: 0;
 }
 
-/* App Selling Point */
-
-div.jumbotron.download-app.row {
-    padding: 0;
-}
+/* Download the Mobile Application */
 
 .download-app {
     background-image: url(../images/app_image.png);
     background-repeat: no-repeat;
     background-size: cover;
-    margin: 0;
+    display: flex;
 }
 
 .download-app .app-tag-line {
-    margin-top: 80px;
-    margin-bottom: 20px;
+    margin-top: 8rem;
+    margin-bottom: 2rem;
 }
 
 .download-app p {
-    margin-bottom: 40px;
+    margin-bottom: 4rem;
+    padding: 0 4rem;
 }
 
-.download-app .purchase-app {
-    margin-bottom: 80px;
+.purchase-app {
+    margin-bottom: 8rem;
 }
 
-.download-app .google {
-    margin-left: 40px;
-    margin-right: 0;
-}
-
-.download-app .app-tag-line,
-.download-app p,
-.final-action-call .final-call,
-.final-action-call p {
-    text-align: right;
+.google, .apple {
+    margin: auto auto;
+    padding: .5rem 1rem;
 }
 
 /* Creator Call To Action */
+
+.creator-sign-up {
+    display: flex;
+}
 
 .creator {
     margin-top: 80px;
@@ -115,43 +104,44 @@ div.jumbotron.download-app.row {
     background-size: cover;
 }
 
-.final-action-call .final-call {
-    margin-top: 52px;
-    margin-bottom: 20px;
+.action-call {
+    display: flex;
+    text-align: center;
 }
 
-.final-action-call p {
+.final-call {
+    margin-top: 8rem;
+    margin-bottom: 2rem;
+}
+
+.action-call p {
     margin-bottom: 0;
-}
-
-div.col-md-6.pull-right.light-on-dark {
-    padding-right: 150px;
+    padding: 0 4rem;
 }
 
 /* Footer */
 
-div.jumbotron.final-action-call {
-    padding: 0;
+.footer {
+    background-color: rgba(0,0,0,.5);
+    height: 100px;
+    text-align: center;
 }
 
-.final-action-call .footer {
-    padding: 0;
-    padding-top: 20px;
-    background-color: rgba(0,0,0,.5);
+img.footer-logo {
+    padding: .5rem 0;
 }
 
 ul.footer-links {
     list-style: none;
-    text-align: center;
+    margin: auto;
     padding: 0;
-    margin-bottom: 20px;
 }
 
 ul.footer-links a,
 ul.footer-links li {
     color: #CCCCCC;
-    display: inline;
-    font-size: 16px;
+    font-size: 14px;
+    font-family: 'Roboto Slab';
 }
 
 ul.footer-links a:hover {
@@ -159,16 +149,32 @@ ul.footer-links a:hover {
 }
 
 ul.footer-links li {
-    margin: 0 .5rem;
+    margin: 0 .5rem;    
 }
 
 p.copyright {
     text-align: center;
     color: #CCCCCC;
-    font-size: 16px;
-    padding-bottom: 20px;
+    font-size: 14px;
+    margin: auto auto;
 }
 
-img.footer-logo {
-    padding-left: 20px;
-}
+/* Responsive: Portrait tablets and up */
+@media screen and (max-width: 768px) {
+  
+    .download-app {
+        background: linear-gradient(rgba(0, 0, 0, 0.45), 
+            rgba(0, 0, 0, 0.45)),
+            url(../images/app_image.png) no-repeat;
+        background-size: cover;
+    
+    }
+    
+    .final-action-call {
+        background: linear-gradient(rgba(0, 0, 0, 0.45), 
+            rgba(0, 0, 0, 0.45)),
+            url(../images/mic_image.png) no-repeat;
+        background-size: cover;
+    
+    }
+  }
