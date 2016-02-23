@@ -1,5 +1,5 @@
 <!doctype html>
-<html class="no-js" lang="">
+<html class="no-js" lang="en" ng-app="app">
   <head>
     <meta charset="utf-8">
     <meta name="description" content="">
@@ -9,8 +9,6 @@
     <link rel="apple-touch-icon" href="apple-touch-icon.png">
     <!-- Place favicon.ico in the root directory -->
 
-      
-      
     <!-- Fonts -->
       
     <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700' rel='stylesheet' type='text/css'>
@@ -24,6 +22,7 @@
     <!-- build:css styles/main.css -->
     <link rel="stylesheet" href="styles/main.css">
     <link rel="stylesheet" href="styles/landing.css">
+    <link rel="stylesheet" href="styles/show.css">
     <!-- endbuild -->
     
     <!-- build:js scripts/vendor/modernizr.js -->
@@ -31,232 +30,11 @@
     <!-- endbuild -->
   </head>
   <body>
-    <!--[if lt IE 10]>
-      <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
-    <![endif]-->
+    <header role="banner" class="page__header" ui-view="header"></header>
+    <main role="main" ui-view="main">
+        <!-- Content -->
+    </main>
       
-    
-        
-                <!--- HEADER --->
-        <div class="hero">   
-            
-                <!--- NAV --->
-            
-                <nav class="nav row">
-                    <div class="col-md-3 col-sm-6 logo-box">
-                        <a href="#"><img class="nav-logo" src="images/castaway_logo.png"></a>
-                    </div>
-                    <div class="col-md-6 hidden-sm hidden-xs nav-search">
-                        <input type="text" class="form-control search-bar nav-bar" placeholder="Search for Podcasts">
-                    </div>
-                    <div class="col-md-3 col-sm-6 hidden-xs nav-links">
-                        <ul class="account-buttons">
-                            <li><a href="#"><button class="btn sign-in">Sign In</button></a></li>
-                            <li><a href="#"><button class="btn sign-up">Sign Up</button></a></li>
-                        </ul>  
-                    </div>
-                </nav>
-            
-                <!--- HERO CONTENT --->
-            
-            <div class="hero-image row">
-                <div class="col-md-2"></div>
-                <div class="col-md-8">
-                    <h1 class="hero-title">The Way Radio Should Be</h1>
-                    <p class="light-on-dark hero-description">Castaway is a free podcasting app that allows you to stream, save, and collect your favorite shows in one place.</p>
-                    <input type="text" class="form-control search-bar" placeholder="Search for Podcasts">
-                    <button class="btn call-to-action">Sign Up For Free!</button>
-                </div>
-                <div class="col-md-2"></div>
-            </div>
-            
-        </div>
-                
-                <!--- RECOMMENDED AUDIO --->
-        <div class="recommended-audio">
-            
-            <div class="top-rated-station row">
-                
-                <div>
-                    <h3 class="section-title col-md-12">Top Rated Stations</h3>
-                </div>
-                
-                <div class="top-station row">
-                    
-                    <div class="col-md-1 hidden-sm hidden-xs"></div>
-                    <div class="col-md-2 col-sm-6 col-xs-12">
-                        <a href="#"><img class="podcast-icons" src="images/podcast-icons/sysk.jpg"></a>
-                        <h5 class="item-title">All About The Brain</h5>
-                        <a href="#"><h6 class="item-creator">SYSK</h6></a>
-                    </div>
-                    <div class="col-md-2 col-sm-6 col-xs-12">
-                        <a href="#"><img class="podcast-icons" src="images/podcast-icons/freakonomics.jpg"></a>
-                        <h5 class="item-title">Economics 101</h5>
-                        <a href="#"><h6 class="item-creator">stephen_dubner</h6></a>
-                    </div>
-                    <div class="col-md-2 col-sm-6 col-xs-12">
-                        <a href="#"><img class="podcast-icons" src="images/podcast-icons/Lore.jpg"></a>
-                        <h5 class="item-title">Scary Stories</h5>
-                        <a href="#"><h6 class="item-creator">erin_mankey</h6></a>
-                    </div>
-                    <div class="col-md-2 col-sm-6 col-xs-12">
-                        <a href="#"><img class="podcast-icons" src="images/podcast-icons/wtfmarc.png"></a>
-                        <h5 class="item-title">Best Comedy 2015</h5>
-                        <a href="#"><h6 class="item-creator">comedy_central</h6></a>
-                    </div>
-                    <div class="col-md-2 col-sm-6 col-xs-12">
-                        <a href="#"><img class="podcast-icons" src="images/podcast-icons/upnext.jpeg"></a>
-                        <h5 class="item-title">This Week in Tech</h5>
-                        <a href="#"><h6 class="item-creator">mark_zz</h6></a>
-                    </div>
-                    <div class="col-md-1 hidden-sm hidden-xs"></div>
-                </div>
-            </div>
-            
-            <div class="recent-episode row">
-                <div>
-                    <h3 class="section-title col-md-12">Most Recent Episodes</h3>
-                </div>
-                
-                <div class="recent-episode-selections row">
-                    
-                    <div class="col-md-1 hidden-sm hidden-xs"></div>
-                    <div class="col-md-2 col-sm-6 col-xs-12">
-                        <a href="#"><img class="podcast-icons" src="images/podcast-icons/theflophouse.jpeg"></a>
-                        <h5 class="item-title">The Flop House</h5>
-                        <a href="#"><h6 class="item-creator">The Maximum Fun Network</h6></a>
-                    </div>
-                    <div class="col-md-2 col-sm-6 col-xs-12">
-                        <a href="#"><img class="podcast-icons" src="images/podcast-icons/99invisible.jpg"></a>
-                        <h5 class="item-title">99% Invisible</h5>
-                        <a href="#"><h6 class="item-creator">Roman Mars</h6></a>
-                    </div>
-                    <div class="col-md-2 col-sm-6 col-xs-12">
-                        <a href="#"><img class="podcast-icons" src="images/podcast-icons/deathsexmoney.jpg"></a>
-                        <h5 class="item-title">Death, Sex + Money</h5>
-                        <a href="#"><h6 class="item-creator">WNYC Studios</h6></a>
-                    </div>
-                    <div class="col-md-2 col-sm-6 col-xs-12">
-                        <a href="#"><img class="podcast-icons" src="images/podcast-icons/billmaher.jpeg"></a>
-                        <h5 class="item-title">Real Time w/ Bill Maher</h5>
-                        <a href="#"><h6 class="item-creator">HBO Podcasts</h6></a>
-                    </div>
-                    <div class="col-md-2 col-sm-6 col-xs-12">
-                        <a href="#"><img class="podcast-icons" src="images/podcast-icons/serial.jpeg"></a>
-                        <h5 class="item-title">Serial</h5>
-                        <a href="#"><h6 class="item-creator">This American Life</h6></a>
-                    </div>
-                    <div class="col-sm-6 hidden-xs hidden-md hidden-lg">
-                        <a href="#"><img class="podcast-icons" src="images/podcast-icons/modernlove.png"></a>
-                        <h5 class="item-title">Modern Love</h5>
-                        <a href="#"><h6 class="item-creator">WBUR & New York Times</h6></a>
-                    </div>
-                    <div class="col-md-1 hidden-sm hidden-xs"></div>
-                </div> 
-                
-                <div class="recent-episode-selections hidden-sm hidden-xs row">
-                    
-                    <div class="col-md-1 hidden-sm hidden-xs"></div>
-                    <div class="col-md-2 col-sm-6 col-xs-12">
-                        <a href="#"><img class="podcast-icons" src="images/podcast-icons/modernlove.png"></a>
-                        <h5 class="item-title">Modern Love</h5>
-                        <a href="#"><h6 class="item-creator">WBUR & New York Times</h6></a>
-                    </div>
-                    <div class="col-md-2 col-sm-6 col-xs-12">
-                        <a href="#"><img class="podcast-icons" src="images/podcast-icons/waitwait.jpg"></a>
-                        <h5 class="item-title">Wait Wait Don't Tell Me</h5>
-                        <a href="#"><h6 class="item-creator">NPR</h6></a>
-                    </div>
-                    <div class="col-md-2 col-sm-6 col-xs-12">
-                        <a href="#"><img class="podcast-icons" src="images/podcast-icons/Nerdist_Podcast_logo.png"></a>
-                        <h5 class="item-title">The Nerdist</h5>
-                        <a href="#"><h6 class="item-creator">Chris Hardwick</h6></a>
-                    </div>
-                    <div class="col-md-2 col-sm-6 col-xs-12">
-                        <a href="#"><img class="podcast-icons" src="images/podcast-icons/NoteToSelf.png"></a>
-                        <h5 class="item-title">Note To Self</h5>
-                        <a href="#"><h6 class="item-creator">WYNC Studios</h6></a>
-                    </div>
-                    <div class="col-md-2 col-sm-6 col-xs-12">
-                        <a href="#"><img class="podcast-icons" src="images/podcast-icons/anotherround.png"></a>
-                        <h5 class="item-title">Another Round</h5>
-                        <a href="#"><h6 class="item-creator">BuzzFeed</h6></a>
-                    </div>
-                    <div class="col-md-1 hidden-sm hidden-xs"></div>
-                </div>
-                
-            </div>
-        </div> 
-                <!--- APP --->
-        
-        <div class="download-app row">
-            <div class="col-md-6 hidden-sm hidden-xs"></div>
-            
-            <div class="col-md-6 col-sm-12 light-on-dark">
-                <h2 class="app-tag-line">On the go? <span class="emphasis">Get the app!</span></h2>
-                <p>Our mobile app syncs perfectly with your online account, allowing you seamless entertainment from home to the office.</p>
-                
-                <div class="purchase-app">
-                    <a href="www.apple.com"><img class="apple" src="images/app-store.png"></a>
-                    <a href="www.googleplay.com"><img class="google" src="images/google-play.png"></a>
-                </div>
-            </div>
-            
-        </div>
-        
-                <!--- CREATOR SIGN UP --->
-        
-        <div class="creator-sign-up row">
-            <div class="col-md-2"></div>
-            <div class="col-md-8 col-sm-12">
-                <h2 class="creator">Do you have a <span class="emphasis">great new show</span> and no way to <span class="emphasis">share it?</span></h2>
-                <p>We are always looking for new content. Whether you are a network or a lone voice on the waves, we offer excellent creator support and plenty of resources.</p>
-                <button class="btn call-to-action">Sign Up As A Creator!</button>
-            </div>
-            <div class="col-md-2"></div>
-        </div>
-        
-                <!--- FINAL CALL TO ACTION--->
-        
-        <div class="final-action-call">
-            
-            <div class="action-call row">  
-                <div class="col-md-6 hidden-sm hidden-xs"></div>
-                <div class="col-md-6 col-sm-12 light-on-dark">
-                    <h2 class="final-call"><span class="emphasis">Listen, Save, Share</span></h2>
-                    <p>Create stations, share your favorite episodes, and connect with podcasters. All for free.</p>
-                    <button class="btn call-to-action final-btn">Start An Account!</button>
-                </div>
-            </div>
-            
-                <!--- FOOTER --->
-            
-            <nav class="nav footer row">
-                    <div class="col-md-3 hidden-sm hidden-xs nav-links">
-                        <p class="copyright">All Rights Reserved, Castaway 2016 &copy;</p>
-                    </div>
-                    <div class="col-md-6 col-sm-12 nav-links">
-                        <ul class="footer-links">
-                            <li><a href="#">About Us</a></li>
-                            <li>|</li>
-                            <li><a href="#">Blog</a></li>
-                            <li>|</li>
-                            <li><a href="#">Contact</a></li>
-                            <li>|</li>
-                            <li><a href="#">Terms & Conditions</a></li>
-                            <li>|</li>
-                            <li><a href="#">Legal</a></li>
-                            <li>|</li>
-                            <li><a href="#">Privacy Policy</a></li>
-                        </ul>
-                    </div>
-                    <div class="col-md-3 hidden-sm hidden-xs logo-box">
-                        <img class="footer-logo" src="images/castaway_logo.png"> 
-                    </div>
-                </nav>
-            
-        </div>
-    
     <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
     <script>
       (function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]=
@@ -269,27 +47,26 @@
 
     <!-- build:js scripts/vendor.js -->
     <!-- bower:js -->
-    <script src="/bower_components/jquery/dist/jquery.js"></script>
+    <script src="../bower_components/modernizr/modernizr.js"></script>
+    <script src="../bower_components/angular/angular.js"></script>
+    <script src="../bower_components/angular-resource/angular-resource.js"></script>
+    <script src="../bower_components/angular-sanitize/angular-sanitize.js"></script>
+    <script src="../bower_components/angular-ui-router/release/angular-ui-router.js"></script>
     <!-- endbower -->
     <!-- endbuild -->
     
-    <!-- build:js scripts/plugins.js -->
-    <script src="/bower_components/bootstrap-sass/assets/javascripts/bootstrap/affix.js"></script>
-    <script src="/bower_components/bootstrap-sass/assets/javascripts/bootstrap/alert.js"></script>
-    <script src="/bower_components/bootstrap-sass/assets/javascripts/bootstrap/dropdown.js"></script>
-    <script src="/bower_components/bootstrap-sass/assets/javascripts/bootstrap/tooltip.js"></script>
-    <script src="/bower_components/bootstrap-sass/assets/javascripts/bootstrap/modal.js"></script>
-    <script src="/bower_components/bootstrap-sass/assets/javascripts/bootstrap/transition.js"></script>
-    <script src="/bower_components/bootstrap-sass/assets/javascripts/bootstrap/button.js"></script>
-    <script src="/bower_components/bootstrap-sass/assets/javascripts/bootstrap/popover.js"></script>
-    <script src="/bower_components/bootstrap-sass/assets/javascripts/bootstrap/carousel.js"></script>
-    <script src="/bower_components/bootstrap-sass/assets/javascripts/bootstrap/scrollspy.js"></script>
-    <script src="/bower_components/bootstrap-sass/assets/javascripts/bootstrap/collapse.js"></script>
-    <script src="/bower_components/bootstrap-sass/assets/javascripts/bootstrap/tab.js"></script>
-    <!-- endbuild -->
-    
     <!-- build:js scripts/main.js -->
-    <script src="scripts/main.js"></script>
+        
+      <!-- Global -->
+      <script src="scripts/app.module.js"></script>
+      <script src="scripts/appRoute.config.js"></script>
+      
+      <!-- Marketing -->
+      <script src="scripts/app.marketing/marketingRoute.config.js"></script>
+    
+      <!-- Components -->
+      <script src="scripts/app.components/navigation/navigation.directive.js"></script>
+      
     <!-- endbuild -->
   </body>
 </html>

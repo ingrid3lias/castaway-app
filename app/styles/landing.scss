@@ -1,8 +1,9 @@
-/* Hero Content */
+/* HERO CONTENT */
 
 .hero {
-    background-image: url("../images/header_image.png");
-    background-repeat: no-repeat;
+    background: #3F5666 url("../images/header_image.png") no-repeat center;
+    -webkit-background-size: cover;    
+    -moz-background-size: cover;
     background-size: cover;
 }
 
@@ -24,7 +25,7 @@
     padding: 0 3rem;
 }
 
-/* Recommended Audio */
+/* RECOMMENDED AUDIO SECTION */
 
 .recommended-audio {
     text-align: center;
@@ -39,24 +40,12 @@
     margin-bottom: 40px;
 }
 
-h5.item-title {
-    font-size: 16px;
-    font-weight: 700;
-    color: #333333;
-    margin-bottom: 0;
-}
-
-h6.item-creator {
-    color: #333333;
-    font-size: 14px;
-    margin-top: 0;
-}
-
-/* Download the Mobile Application */
+/* MOBILE APPLICATION SECTION */
 
 .download-app {
-    background-image: url(../images/app_image.png);
-    background-repeat: no-repeat;
+    background: #3F5666 url("../images/app_image.png") no-repeat center;
+    -webkit-background-size: cover;    
+    -moz-background-size: cover;
     background-size: cover;
     display: flex;
 }
@@ -80,7 +69,7 @@ h6.item-creator {
     padding: .5rem 1rem;
 }
 
-/* Audio-Creator Call To Action */
+/* AUDIO-CREATOR CALL TO ACTION */
 
 .creator-sign-up {
     display: flex;
@@ -95,11 +84,12 @@ h6.item-creator {
     margin-bottom: 0;
 }
 
-/* Final Call To Action */
+/* FINAL CALL TO ACTION */
 
 .final-action-call {
-    background-image: url(../images/mic_image.png);
-    background-repeat: no-repeat;
+    background: #3F5666 url("../images/mic_image.png") no-repeat center;
+    -webkit-background-size: cover;    
+    -moz-background-size: cover;
     background-size: cover;
 }
 
@@ -118,7 +108,7 @@ h6.item-creator {
     padding: 0 4rem;
 }
 
-/* Footer */
+/* FOOTER */
 
 .footer {
     background-color: rgba(0,0,0,.5);
@@ -133,7 +123,7 @@ img.footer-logo {
 ul.footer-links {
     list-style: none;
     margin: auto;
-    padding: 0;
+    padding: 0 10px;
 }
 
 ul.footer-links a,
@@ -205,6 +195,8 @@ p.copyright {
     margin-bottom: 30px;
     }
   }
+
+/* Responsive: Mobile Devices */
 
 @media (max-width: 400px) {
     

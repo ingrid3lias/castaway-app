@@ -2,6 +2,10 @@
   "name": "castaway-app",
   "private": true,
   "dependencies": {
+    "angular": "~1.5.0",
+    "angular-resource": "~1.4.5",
+    "angular-sanitize": "~1.4.5",
+    "angular-ui-router": "~0.2.15",
     "bootstrap-sass": "~3.3.5",
     "modernizr": "~2.8.1",
     "font-awesome": "fontawesome#^4.5.0"
