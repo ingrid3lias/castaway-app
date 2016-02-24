@@ -36,10 +36,6 @@
     padding: 0;
 }
 
-.recent-episode-selections {
-    margin-bottom: 40px;
-}
-
 /* MOBILE APPLICATION SECTION */
 
 .download-app {
@@ -198,7 +194,7 @@ p.copyright {
 
 /* Responsive: Mobile Devices */
 
-@media (max-width: 400px) {
+@media (max-width: 414px) {
     
     .hero-title {
         font-size: 38px;
@@ -215,6 +211,19 @@ p.copyright {
     p {
         font-size: 14px;
     }
+    
+  .hero-image button.call-to-action {
+    margin-bottom: 0;
+  }  
+  
+    a.account-sign-in {
+        color: #FFFFFF;
+        font-size: 12px;
+        font-weight: 100;
+  }
+  h5.hidden-sm.hidden-md.hidden-lg {
+        margin-bottom: 50px;
+  }
     
     input.search-bar {
         width: 300px;

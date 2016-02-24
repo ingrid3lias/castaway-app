@@ -18,11 +18,11 @@
             }
         })
     //Currently not in use
-        .state('base.marketingContact', {
-            url: '/contact-us',
+        .state('base.marketingSearch', {
+            url: '/search',
             views: {
                 'view': {
-                    templateUrl: 'views/marketing/contact-us.html'
+                    templateUrl: 'views/marketing/search.html'
                 }
             }
         })

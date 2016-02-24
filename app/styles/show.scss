@@ -383,15 +383,20 @@ span.info-emphasis {
 /* PLAYER BAR */
 
 .player-bar {
-  height: 100px;
+  height: 70px;
   width: 100%;
-  background-color: #3F5666;
+  background-color: #2F3440;
   position: fixed;
   left: 0;
   bottom: 0;
-  display: none;
+  //display: none;
 }
 
+.player-bar-avatar {
+  height: 60px;
+  width: 60px;
+  margin: 5px 15px;
+}
 
 
 

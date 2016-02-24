@@ -25,7 +25,7 @@ body {
 }
 
 body {
-  padding-bottom: 120px;
+  //padding-bottom: 120px;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -125,6 +125,7 @@ h6.item-creator {
     color: #333333;
     font-size: 14px;
     margin-top: 0;
+    margin-bottom: 40px;
 }
 
 /* BUTTON STYLES */
@@ -196,23 +197,6 @@ nav {
     background-color: #EA6045;
 }
 
-.nav-search {
-    display: flex;
-    padding: 0;
-}
-
-input.form-control.search-bar {
-    margin: auto auto;
-}
-
-input.search-bar {
-    width: 650px;
-    margin: 0 auto;
-}
-
-input.nav-bar {
-    display: none;
-}
 
 ul.account-buttons {
     list-style: none;
@@ -226,16 +210,55 @@ ul.account-buttons {
     display: flex;
 }
 
+/* SEARCH FUNCTION */
+
+.nav-search {
+    display: flex;
+    padding: 0;
+}
+
+input.form-control.search-bar {
+    margin: auto auto;
+}
+
+.search {
+  position: relative;
+  width: 650px;
+  margin: auto auto;
+}
+
+.search a {
+  color: #333333;
+}
+
+.search button {
+  position: absolute;
+  background: transparent;
+  border: 0px;
+  right: 10px;
+  top: 5px;
+}
+
 /* MEDIA QUERIES */
 
 @media (max-width: 800px) {
-    .nav {
-        background-color: rgba(0,0,0,.5);
-    }
+  .nav {
+    background-color: #3F5666;
+  }
+  
+  .search button {
+    right: 80px;
+  }
 }
 
-@media (max-width: 400px) {
-    
+@media (max-width: 414px) {
+  .search {
+    width: 300px;
+  }
+  
+  .search button {
+    right: 10px;
+  }
 }
 
 
