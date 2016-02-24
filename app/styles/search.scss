@@ -20,3 +20,44 @@ div.search-page-bar {
   height: 250px;
   width: 250px;
 }
+
+/* MEDIA QUERIES */
+
+@media (max-width: 900px) {
+  
+  div.search-page-bar{
+    margin: auto;
+  }
+  
+  .search-section {
+    margin: 0;
+    margin-bottom: 40px;
+  }
+  
+  .profile-navigation.search-nav {
+    margin: 40px 20px;
+  }
+  
+}
+
+@media (max-width: 414px) {
+  .search-section .search-page-bar {
+    width: 300px;
+  }
+  
+  .profile-navigation.search-nav a {
+    font-size: 12px;
+    margin: 0 20px;
+  }
+  
+  .profile-navigation.search-nav {
+    display: inline;
+  }
+  
+  .profile-link a:hover,
+  .profile-link a:active {
+    border-bottom: none;
+    color: #EA6045;
+}
+  
+  }
