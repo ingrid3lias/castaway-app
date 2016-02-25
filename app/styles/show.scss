@@ -211,6 +211,27 @@ button.tag p {
   margin: 0 5px;
 }
 
+/* REVIEW STYLES */
+
+.user-text h6 {
+  font-size: 16px;
+  font-weight: 100;
+  line-height: 22px;
+}
+
+.review .episode-tags {
+  margin-top: 0px;
+}
+
+.read-more {
+  font-size: 16px;
+}
+
+.review .interactive-icons {
+  margin-top: 5px;
+}
+
+
 /* HOVER ICON */
 
 .episode i.fa-play-circle {
@@ -366,6 +387,7 @@ span.info-emphasis {
   margin-bottom: 40px;
 }
 
+/*
 .center-rec {
   text-align: center;
   width: 200px;
@@ -378,6 +400,7 @@ span.info-emphasis {
 .rec-box div.image-overlay.right {
   margin-right: 0;
 }
+*/
 
 /* PLAYER BAR */
 
