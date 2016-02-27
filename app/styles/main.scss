@@ -85,8 +85,8 @@ h2 span.emphasis {
 
 .image-overlay {
   position: relative;
-  height: 200px;
-  width: 200px;
+  height: 100%;
+  width: 100%;
   margin: auto;
 }
 
@@ -189,8 +189,9 @@ img.nav-logo {
     margin: .5rem 0;
 }
 
-nav {
+.nav {
     background-color: #3F5666;
+    
 }
 
 .logo-box {

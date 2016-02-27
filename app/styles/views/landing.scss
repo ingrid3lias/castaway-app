@@ -1,7 +1,7 @@
 /* HERO CONTENT */
 
 .hero {
-    background: #3F5666 url("../images/header_image.png") no-repeat center;
+    background: #3F5666 url("../../images/landing/header_image.png") no-repeat center;
     -webkit-background-size: cover;    
     -moz-background-size: cover;
     background-size: cover;
@@ -39,7 +39,7 @@
 /* MOBILE APPLICATION SECTION */
 
 .download-app {
-    background: #3F5666 url("../images/app_image.png") no-repeat center;
+    background: #3F5666 url("../../images/landing/app_image.png") no-repeat center;
     -webkit-background-size: cover;    
     -moz-background-size: cover;
     background-size: cover;
@@ -83,7 +83,7 @@
 /* FINAL CALL TO ACTION */
 
 .final-action-call {
-    background: #3F5666 url("../images/mic_image.png") no-repeat center;
+    background: #3F5666 url("../../images/landing/mic_image.png") no-repeat center;
     -webkit-background-size: cover;    
     -moz-background-size: cover;
     background-size: cover;
@@ -150,7 +150,7 @@ p.copyright {
     .download-app {
         background: linear-gradient(rgba(0, 0, 0, 0.6), 
             rgba(0, 0, 0, 0.45)),
-            url(../images/app_image.png) no-repeat;
+            url(../../images/landing/app_image.png) no-repeat;
         background-size: cover;
     
     }
@@ -158,7 +158,7 @@ p.copyright {
     .final-action-call {
         background: linear-gradient(rgba(0, 0, 0, 0.6), 
             rgba(0, 0, 0, 0.45)),
-            url(../images/mic_image.png) no-repeat;
+            url(../../images/landing/mic_image.png) no-repeat;
         background-size: cover;
     
     }

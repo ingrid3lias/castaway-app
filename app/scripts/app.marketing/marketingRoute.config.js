@@ -7,7 +7,8 @@
 
     // Default URL tasks/index page.
     //   $urlRouterProvider.otherwise('/client', '/client');
-
+    
+    //Landing Page
     $stateProvider
         .state('base.marketingHome', {
             url: '/home',
@@ -17,7 +18,7 @@
                 }
             }
         })
-    //Currently not in use
+    //Search Function Template
         .state('base.marketingSearch', {
             url: '/search',
             views: {
@@ -28,10 +29,10 @@
         })
     //Base template for all profile views
         .state('base.marketingPodcastShow', {
-              url: '/podcast/show',
+              url: '/show',
               views: {
                   'view': {
-                      templateUrl: 'views/marketing/podcast/show.html'
+                      templateUrl: 'views/podcasts/podcastIndex.html'
                   }
               }
           })
