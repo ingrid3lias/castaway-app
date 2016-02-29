@@ -5,7 +5,6 @@
 
   function PodcastsRouteConfig ($stateProvider, $urlRouterProvider, $locationProvider) {
     
-    //Content View
     $stateProvider
       
     // Podcast Index

@@ -30,6 +30,16 @@
           }
         }
       })
+      .state('user', {
+        views: {
+          'header': {
+            template: '<ca-user-navigation></ca-user-navigation>'
+          },
+          'main': {
+            templateUrl: 'views/layouts/user.html'
+          }
+        }
+      })
      
 
   }
