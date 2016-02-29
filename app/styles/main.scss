@@ -240,6 +240,15 @@ input.form-control.search-bar {
   top: 5px;
 }
 
+
+/* TESTING */
+
+.page__navigation,
+.page__view {
+  margin-left: 150px;
+  margin-right: 150px;
+}
+
 /* MEDIA QUERIES */
 
 @media (max-width: 800px) {

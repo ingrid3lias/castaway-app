@@ -1,80 +1,19 @@
-<!-- PROFILE HEADER -->
-<ca-podcast-header></ca-podcast-header>
-<!-- CONTAINER OF ALL CONTENT -->
-<div class="col-md-1"></div>
-<div class="col-md-10 content-container"> 
-  <!-- PROFILE NAVIGATION BAR -->
-  <ca-podcast-nav></ca-podcast-nav>
-  <hr class="content-divider">
+<!-- CONTAINER OF ALL CONTENT-->
+<div class="content-container row">
+  <div class="col-md-12"> 
   <!-- MAIN CONTENT -->
   <div class="profile-main row">
-    <!-- CONTENT BASED ON PROFILE -->
+    <!-- CONTENT BASED ON VIEW -->
     <div class="main-content col-md-7 col-sm-12">
-      <!-- EPISODES -->
-      <!-- INSERT VIEW -->
       
       <ca-episode-player></ca-episode-player>
-      
+      <ca-episode-announcement></ca-episode-announcement>
+      <ca-episode-review></ca-episode-review>
+    
     </div>
     <!-- PROFILE CONTENT -->
     <ca-podcast-profile-info></ca-podcast-profile-info>
   </div>
   <!-- END MAIN CONTENT -->
-</div>
-<div class="col-md-1"></div>
-
-
-
-
-
-<!-- PLAYER BAR -->
-<div class="player-bar">
-  <div class="row">
-    <div class="col-md-1"></div>
-    <div class="col-md-10">
-      <div class="player-bar-content row">
-        <div class="col-md-1">
-          <div class="image-overlay player-bar-avatar">
-            <a href="#"><img class="podcast-avatar" src="../../../images/podcast-icons/mbmbam.jpg"></a>
-          </div>
-        </div>
-        <div class="col-md-8">
-          <div>
-            <h5 class="player-bar-podcast-title">My Brother, My Brother & Me - <span class="player-bar-podcast-episode">Glistening Fish Lifters</span></h5>
-          </div>
-          <div class="player-bar-function">
-            <div class="player-bar-btn">
-              <i class="fa fa-chevron-circle-left"></i>
-              <i class="fa fa-play-circle"></i>
-              <i class="fa fa-chevron-circle-right"></i>
-            </div>
-            <div class="player-control">
-              <div class="player-current-time">0:00</div>
-              <div class="player-total-time">1:02:03</div>
-              <div class="player-seek-bar">
-                <div class="player-fill"></div>
-                <div class="player-thumb"></div>
-              </div>
-            </div> 
-          </div>
-          
-        </div>
-        <div class="col-md-3">
-         <div class="volume-control">
-          <div class="player-bar-function">
-            <div class="player-control">
-              <div class="player-current-time"><i class="fa fa-volume-off"></i></div>
-              <div class="player-total-time"><i class="fa fa-volume-up"></i></div>
-              <div class="player-seek-bar">
-                <div class="player-fill"></div>
-                <div class="player-thumb"></div>
-              </div>
-            </div> 
-          </div>
-        </div> 
-        </div>
-      </div>
-    </div>
-    <div class="col-md-1"></div>
   </div>
 </div>

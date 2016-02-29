@@ -30,7 +30,7 @@
     <script src="/bower_components/modernizr/modernizr.js"></script>
     <!-- endbuild -->
   </head>
-  <body>
+  <body ng-init="init()" state="{{$state.current.name}}" ng-controller="AppCtrl">
     <header role="banner" class="page__header" ui-view="header"></header>
     <main role="main" ui-view="main">
         <!-- Content -->
@@ -61,6 +61,7 @@
       <!-- Global -->
       <script src="scripts/app.module.js"></script>
       <script src="scripts/appRoute.config.js"></script>
+      <script src="scripts/app.controller.js"></script>
       
       <!-- Marketing -->
       <script src="scripts/app.marketing/marketingRoute.config.js"></script>
@@ -70,8 +71,12 @@
       <script src="scripts/app.podcasts/podcastIndex.directive.js"></script>
       <script src="scripts/app.podcasts/podcastHeader.directive.js"></script>
       <script src="scripts/app.podcasts/podcastNavigation.directive.js"></script>
-      <script src="scripts/app.podcasts/episodePlayer.directive.js"></script>
       <script src="scripts/app.podcasts/podcastProfileInfo.directive.js"></script>
+      <script src="scripts/app.podcasts/podcastRecommendations.directive.js"></script>
+      <script src="scripts/app.podcasts/content/episodePlayer.directive.js"></script>
+      <script src="scripts/app.podcasts/content/episodeAnnouncement.directive.js"></script>
+      <script src="scripts/app.podcasts/content/episodeReview.directive.js"></script>
+      
       
       <!-- Components -->
       <script src="scripts/app.components/navigation/navigation.directive.js"></script>

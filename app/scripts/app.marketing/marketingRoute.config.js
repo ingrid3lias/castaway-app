@@ -27,15 +27,5 @@
                 }
             }
         })
-    //Base template for all profile views
-        .state('base.marketingPodcastShow', {
-              url: '/show',
-              views: {
-                  'view': {
-                      templateUrl: 'views/podcasts/podcastIndex.html'
-                  }
-              }
-          })
-
   }
 })();

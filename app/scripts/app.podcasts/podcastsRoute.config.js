@@ -14,6 +14,12 @@
         views: {
           'view': {
             templateUrl: 'views/podcasts/index.html',
+          },
+          'navigation': {
+            templateUrl: 'views/podcasts/shared/podcast-navigation.html',
+          },
+          'header': {
+            templateUrl: 'views/podcasts/shared/podcast-header.html'
           }
         }
       })
@@ -21,7 +27,26 @@
         url: '/index',
         template: '<ca-podcast-index></ca-podcast-index>'
       })
-
+    
+    // Episode Index
+      .state('base.episodeIndex', {
+        url: '/episode',
+        views: {
+          'view': {
+            templateUrl: 'views/podcasts/index.html',
+          },
+          'navigation': {
+            templateUrl: 'views/podcasts/shared/episode-navigation.html',
+          },
+          'header': {
+            templateUrl: 'views/podcasts/shared/episode-header.html'
+          }
+        }
+      })
+      .state('base.episodeIndex.index', {
+        url: '/index',
+        template: '<ca-podcast-index></ca-podcast-index>'
+      })
     //end of states
   }
 })();
