@@ -20,6 +20,16 @@
           }
         }
       })
+      .state('podcast', {
+        views: {
+          'header': {
+            template: '<ca-main-navigation></ca-main-navigation>'
+          },
+          'main': {
+            templateUrl: 'views/layouts/podcast.html'
+          }
+        }
+      })
      
 
   }

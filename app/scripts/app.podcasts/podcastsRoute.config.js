@@ -9,10 +9,10 @@
     $stateProvider
       
     // Podcast Index
-      .state('base.podcastIndex', {
+      .state('podcast.podcastIndex', {
         url: '/podcast',
         views: {
-          'view': {
+          'section': {
             templateUrl: 'views/podcasts/index.html',
           },
           'navigation': {
@@ -23,16 +23,36 @@
           }
         }
       })
-      .state('base.podcastIndex.index', {
+      .state('podcast.podcastIndex.index', {
         url: '/index',
         template: '<ca-podcast-index></ca-podcast-index>'
       })
+      .state('podcast.podcastIndex.episode', {
+        url: '/episode',
+        template: '<ca-podcast-episode-index></ca-podcast-episode-index>'
+      })
+      .state('podcast.podcastIndex.podcast', {
+        url: '/podcast',
+        template: '<ca-podcast-podcast-index></ca-podcast-podcast-index>'
+      })
+      .state('podcast.podcastIndex.station', {
+        url: '/station',
+        template: '<ca-podcast-station-index></ca-podcast-station-index>'
+      })
+      .state('podcast.podcastIndex.announcement', {
+        url: '/announcement',
+        template: '<ca-podcast-announcement-index></ca-podcast-announcement-index>'
+      })
+      .state('podcast.podcastIndex.review', {
+        url: '/review',
+        template: '<ca-podcast-review-index></ca-podcast-review-index>'
+      })
     
     // Episode Index
-      .state('base.episodeIndex', {
+      .state('podcast.episodeIndex', {
         url: '/episode',
         views: {
-          'view': {
+          'section': {
             templateUrl: 'views/podcasts/index.html',
           },
           'navigation': {
@@ -43,7 +63,7 @@
           }
         }
       })
-      .state('base.episodeIndex.index', {
+      .state('podcast.episodeIndex.index', {
         url: '/index',
         template: '<ca-podcast-index></ca-podcast-index>'
       })

@@ -285,17 +285,20 @@ i.fa-play-circle:hover {
  }
 
  .seek-bar .thumb-bar {
-     position: absolute;
-     height: 10px;
-     width: 30%;
-     background: #3F5666;
-     top: 50%;
-     /* #1 */
-     margin-left: -0.15rem;
-     margin-top: -0.15rem;
-     border-radius: 2px;
-     cursor: pointer;
+  position: absolute;
+  height: 10px;
+  width: 30%;
+  background: #3F5666;
+  top: 50%;
+  margin-left: -0.15rem;
+  margin-top: -0.15rem;
+  border-radius: 2px;
+  cursor: pointer;
  }
+
+.thumb-bar.ep-header-thumb {
+  background: #F8CA4D;
+}
 
 /* BIO STATS */
 
