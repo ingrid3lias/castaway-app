@@ -1,0 +1,159 @@
+// Responsive Settings
+// ========================================
+
+//////// NAV ////////
+
+@media (max-width: 800px) {
+  .nav {
+    background-color: #3F5666;
+  }
+  
+  .search button {
+    right: 80px;
+  }
+}
+
+@media (max-width: 414px) {
+  .search {
+    width: 300px;
+  }
+  
+  .search button {
+    right: 10px;
+  }
+}
+
+//////// LANDING ////////
+
+@media (max-width: 800px) {
+  
+    .download-app {
+        background: linear-gradient(rgba(0, 0, 0, 0.6), 
+            rgba(0, 0, 0, 0.45)),
+            url(../../images/landing/app_image.png) no-repeat;
+        background-size: cover;
+    
+    }
+    
+    .final-action-call {
+        background: linear-gradient(rgba(0, 0, 0, 0.6), 
+            rgba(0, 0, 0, 0.45)),
+            url(../../images/landing/mic_image.png) no-repeat;
+        background-size: cover;
+    
+    }
+    
+    .hero-title {
+        font-size: 48px;
+        margin-top: 150px;
+    }
+    
+    .section-title {
+        margin: 40px 0;
+    }
+    
+    .section-title,
+    .app-tag-line,
+    .creator,
+    .final-call {
+        font-size: 38px;
+    }
+    
+    p {
+        font-size: 16px;
+    }
+    
+    input.search-bar {
+        width: 500px;
+    }
+    
+    h6.item-creator {
+    margin-bottom: 30px;
+    }
+  }
+
+@media (max-width: 414px) {
+    
+    .hero-title {
+        font-size: 38px;
+        margin-top: 80px;
+    }
+    
+    .section-title,
+    .app-tag-line,
+    .creator,
+    .final-call {
+        font-size: 32px;
+    }
+    
+    p {
+        font-size: 14px;
+    }
+    
+  .hero-image button.call-to-action {
+    margin-bottom: 0;
+  }  
+  
+    a.account-sign-in {
+        color: #FFFFFF;
+        font-size: 12px;
+        font-weight: 100;
+  }
+  h5.hidden-sm.hidden-md.hidden-lg {
+        margin-bottom: 50px;
+  }
+    
+    input.search-bar {
+        width: 300px;
+    }
+    
+    ul.footer-links a,
+    ul.footer-links li {
+        font-size: 12px;
+    }
+    
+    .footer {
+        padding: 0 1rem;
+    }
+}
+
+//////// SEARCH PAGE ////////
+
+@media (max-width: 900px) {
+  
+  div.search-page-bar{
+    margin: auto;
+  }
+  
+  .search-section {
+    margin: 0;
+    margin-bottom: 40px;
+  }
+  
+  .profile-navigation.search-nav {
+    margin: 40px 20px;
+  }
+  
+}
+
+@media (max-width: 414px) {
+  .search-section .search-page-bar {
+    width: 300px;
+  }
+  
+  .profile-navigation.search-nav a {
+    font-size: 12px;
+    margin: 0 20px;
+  }
+  
+  .profile-navigation.search-nav {
+    display: inline;
+  }
+  
+  .profile-link a:hover,
+  .profile-link a:active {
+    border-bottom: none;
+    color: #EA6045;
+}
+  
+  }

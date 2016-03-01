@@ -1,0 +1,109 @@
+/* GENERAL */
+
+h2 span.emphasis {
+    font-weight: 700;
+}
+
+p.light-on-dark,
+.light-on-dark {
+    color: #FFFFFF;
+}
+
+/* HERO CONTENT */
+
+.hero {
+    background: #3F5666 url("../../images/landing/header_image.png") no-repeat center;
+    -webkit-background-size: cover;    
+    -moz-background-size: cover;
+    background-size: cover;
+}
+
+.hero-title {
+    font-weight: 600;
+    color: #FFFFFF;
+    text-shadow: 2px 2px 4px #000000;
+    letter-spacing: 3.04px;
+    margin-top: 250px;
+    padding: 0 3rem;
+}
+
+.hero-description {
+    margin-bottom: 2rem;
+    padding: 0 3rem;
+}
+
+/* RECOMMENDED AUDIO SECTION */
+
+.section-title {
+    margin: 80px 0;
+    font-weight: 500;
+    letter-spacing: 3.04px;
+}
+
+/* MOBILE APPLICATION SECTION */
+
+.download-app {
+    background: #3F5666 url("../../images/landing/app_image.png") no-repeat center;
+    -webkit-background-size: cover;    
+    -moz-background-size: cover;
+    background-size: cover;
+    display: flex;
+}
+
+.app-tag-line {
+    margin-top: 8rem;
+    margin-bottom: 2rem;
+}
+
+.download-app p {
+    margin-bottom: 4rem;
+    padding: 0 4rem;
+}
+
+.purchase-app {
+    margin-bottom: 8rem;
+}
+
+.google, .apple {
+    margin: auto auto;
+    padding: .5rem 1rem;
+}
+
+/* AUDIO-CREATOR CALL TO ACTION */
+
+.creator-sign-up {
+    display: flex;
+}
+
+.creator {
+    margin-top: 80px;
+    margin-bottom: 20px;
+}
+
+.creator-sign-up p {
+    margin-bottom: 0;
+}
+
+/* FINAL CALL TO ACTION */
+
+.final-action-call {
+    background: #3F5666 url("../../images/landing/mic_image.png") no-repeat center;
+    -webkit-background-size: cover;    
+    -moz-background-size: cover;
+    background-size: cover;
+}
+
+.action-call {
+    display: flex;
+    text-align: center;
+}
+
+.final-call {
+    margin-top: 8rem;
+    margin-bottom: 2rem;
+}
+
+.action-call p {
+    margin-bottom: 0;
+    padding: 0 4rem;
+}

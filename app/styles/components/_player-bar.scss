@@ -1,0 +1,132 @@
+// Player Bar
+// ========================================
+
+
+/* PLAYER BAR */
+
+.player-bar {
+  height: 100px;
+  width: 100%;
+  background-color: rgba(47,52,64,.8);
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  color: #FFFFFF;
+  letter-spacing: 1px;
+  display: none;
+}
+
+.player-bar-avatar {
+  height: 80px;
+  width: 80px;
+  margin: 10px 15px;
+}
+
+.player-bar-podcast-title {
+  font-family: 'Open Sans';
+  font-size: 14px;
+  font-weight: 600;
+  text-align: left;
+  margin: 20px 0 0 10px;
+}
+
+span.player-bar-podcast-episode {
+  font-weight: 100;
+}
+
+.player-bar-function {
+  display: flex;
+  justify-content: space-between;
+  margin-left: 10px;
+}
+
+.player-bar-btn {
+  text-align: left;
+  margin-top: 20px;
+}
+
+.player-bar-btn i.fa-play-circle {
+  font-size: 32px;
+  margin-right: 15px;
+  margin-left: 15px;
+}
+
+i.fa-chevron-circle-left,
+i.fa-chevron-circle-right {
+  font-size: 22px;
+}
+
+.player-control {
+  position: relative;
+  font-family: 'Open Sans';
+  font-size: 14px;
+  font-weight: 100;
+  margin-right: 50px;
+}
+
+.player-control .player-current-time {
+    position: absolute;
+    left: -50px;
+    top: 27px;
+ }
+
+.player-control .player-total-time {
+     position: absolute;
+     right: -60px;
+     top: 27px;
+ }
+
+.player-seek-bar {
+     height: 0.25rem;
+     border-radius: 2px;
+     position: relative;
+     cursor: pointer;
+     margin-top: 32px;
+ }
+
+.player-seek-bar .player-fill {
+     background: transparent;
+     width: 550px;
+     height: 10px;
+     border-radius: 2px;
+     border: 1px solid #FFFFFF;
+ }
+
+ .player-seek-bar .player-thumb {
+     position: absolute;
+     height: 10px;
+     width: 30%;
+     background: #FFFFFF;
+     top: 50%;
+     /* #1 */
+     margin-left: -0.15rem;
+     margin-top: -0.15rem;
+     border-radius: 2px;
+     cursor: pointer;
+ }
+
+/* VOLUME CONTROL */
+
+.volume-control {
+  margin-left: 30px;
+}
+
+.volume-control .player-seek-bar .player-fill {
+  width: 150px;
+}
+
+.volume-control {
+  margin-top: 35px;
+}
+
+.volume-control .player-control .player-total-time {
+  right: -30px;
+  font-size: 22px;
+  top: 20px;
+}
+
+.volume-control .player-control .player-current-time {
+  left: -22px;
+  font-size: 22px;
+  top: 20px;
+}

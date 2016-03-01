@@ -24,8 +24,20 @@
         }
       })
       .state('podcast.userIndex.index', {
-        url: '/profile',
+        url: '/index',
         template: '<ca-user-index></ca-user-index>'
+      })
+      .state('podcast.userIndex.station', {
+        url: '/station',
+        template: '<ca-user-stations></ca-user-stations>'
+      }) 
+      .state('podcast.userIndex.following', {
+        url: '/following',
+        template: '<ca-user-following></ca-user-following>'
+      })
+      .state('podcast.userIndex.review', {
+        url: '/review',
+        template: '<ca-user-review></ca-user-review>'
       })
      
       //User Collection
@@ -46,6 +58,18 @@
       .state('podcast.userCollection.index', {
         url: '/index',
         template: '<ca-user-collection></ca-user-collection>'
+      })
+      .state('podcast.userCollection.saved', {
+        url: '/saved',
+        template: '<ca-user-collection></ca-user-collection>'
+      })
+      .state('podcast.userCollection.station', {
+        url: '/station',
+        template: '<ca-user-stations></ca-user-stations>'
+      })
+      .state('podcast.userCollection.following', {
+        url: '/following',
+        template: '<ca-user-following></ca-user-following>'
       })
   }
 })();

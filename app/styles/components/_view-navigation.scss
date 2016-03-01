@@ -1,0 +1,48 @@
+// Main View Navigation Styles
+// ========================================
+
+.profile-navigation,
+.profile-interaction-btn {
+  margin: 40px 0;
+}
+
+ul.profile-navigation {
+  padding: 0;
+  display: flex;
+  justify-content: space-between;
+}
+
+.profile-link a{
+  font-size: 18px;
+  font-weight: 200;
+  letter-spacing: 2px;
+  line-height: 35px;
+  font-family: 'Open Sans';
+  color: #333333;
+  padding-bottom: 5px;
+}
+
+li.profile-link {
+  margin: 0;
+}
+
+.profile-link a:hover {
+  border-bottom: 5px solid #EA6045;
+}
+
+ul.btn-list {
+  padding: 0;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+}
+
+.btn-list li {
+  margin: 0;
+}
+
+hr.content-divider {
+  margin: 0;
+  height: 1px;
+  background: #333333;
+}

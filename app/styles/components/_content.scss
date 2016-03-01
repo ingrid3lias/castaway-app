@@ -1,0 +1,106 @@
+// Content Directive Styles
+// ========================================
+
+//////// MAIN CONTENT STYLES ////////
+
+.episode {
+  margin-bottom: 40px;
+}
+
+.main-content {
+  margin-top: 40px;
+  text-align: left;
+}
+
+.episode-top-info,
+.episode-info-bottom {
+  display: flex;
+  justify-content: space-between;
+}
+
+.episode-info a {
+  color: #333333;
+}
+
+.podcast-title {
+  font-weight: 600;
+}
+
+.episode-date,
+.episode-title {
+  font-size: 16px;
+}
+
+.episode-title {
+  margin-top: 0;
+}
+
+.episode-date {
+  line-height: 24px;
+}
+
+.date-info {
+  text-align: right;
+}
+
+.episode-tags,
+.interactive-icons {
+  margin-top: 40px;
+}
+
+.interactive-icons a {
+  color: #3F5666;
+  font-size: 22px;
+}
+
+i.fa-share-square {
+  padding: 0 20px;
+}
+
+i.fa-gittip {
+  color: #EAEAEA;
+}
+
+i.fa-share-square:hover,
+i.fa-gittip:hover,
+i.fa-plus-circle:hover,
+i.fa-share:active,
+i.fa-gittip:active,
+i.fa-plus-circle:active {
+  color: #EA6045;
+}
+
+button.tag {
+  background-color: #EAEAEA;
+  border: none;
+  border-radius: 15px;
+  margin: 0 5px;
+}
+
+button.tag p {
+  color: #3F5666;
+  font-weight: 100;
+  font-family: 'Open Sans';
+  font-size: 16px;
+  margin: 0 5px;
+}
+
+//////// REVIEW/ANNOUNCEMENT CONTENT STYLES ////////
+
+.user-text h6 {
+  font-size: 16px;
+  font-weight: 100;
+  line-height: 22px;
+}
+
+.review .episode-tags {
+  margin-top: 0px;
+}
+
+.read-more {
+  font-size: 16px;
+}
+
+.review .interactive-icons {
+  margin-top: 5px;
+}

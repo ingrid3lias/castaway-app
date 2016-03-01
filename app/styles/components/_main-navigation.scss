@@ -1,0 +1,29 @@
+// Main Navigation
+// ========================================
+
+nav, .logo-box, .nav-links, .nav-search {
+    height: 100px;
+}
+
+nav {
+    background-color: #3F5666;
+    
+}
+
+.logo-box {
+    background-color: #EA6045;
+}
+
+.nav-logo {
+    margin: .5rem 0;
+}
+
+ul.account-buttons {
+    list-style: none;
+    padding: 0;
+    margin: auto auto;
+}
+
+.nav-links {
+    display: flex;
+}

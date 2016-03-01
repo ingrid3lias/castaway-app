@@ -1,0 +1,29 @@
+// Search Bar
+// ========================================
+
+.nav-search {
+    display: flex;
+    padding: 0;
+}
+
+input.form-control.search-bar {
+    margin: auto auto;
+}
+
+.search {
+  position: relative;
+  width: 650px;
+  margin: auto auto;
+}
+
+.search a {
+  color: #333333;
+}
+
+.search button {
+  position: absolute;
+  background: transparent;
+  border: 0px;
+  right: 10px;
+  top: 5px;
+}

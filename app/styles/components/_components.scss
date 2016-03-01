@@ -1,0 +1,23 @@
+// Components
+// ========================================
+
+//////// NAVS ////////
+
+@import "main-navigation";
+@import "view-navigation";
+@import "footer";
+
+//////// FUNCTIONAL COMPONENTS ////////
+
+@import "search-bar";
+@import "seek-bar";
+@import "player-bar";
+
+//////// STATIC COMPONENTS ////////
+
+@import "avatar";
+
+//////// DATA-DRIVEN COMPONENTS ////////
+
+@import "recommended";
+@import "content";

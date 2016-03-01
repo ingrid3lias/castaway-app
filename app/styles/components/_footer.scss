@@ -1,0 +1,40 @@
+// Footer Styles
+// ========================================
+
+.footer {
+    background-color: rgba(0,0,0,.5);
+    height: 100px;
+    text-align: center;
+}
+
+img.footer-logo {
+    padding: .5rem 0;
+}
+
+ul.footer-links {
+    list-style: none;
+    margin: auto;
+    padding: 0 10px;
+}
+
+ul.footer-links a,
+ul.footer-links li {
+    color: #CCCCCC;
+    font-size: 14px;
+    font-family: 'Roboto Slab';
+}
+
+ul.footer-links a:hover {
+    color: #F8CA4D;
+}
+
+ul.footer-links li {
+    margin: 0 .5rem;    
+}
+
+p.copyright {
+    text-align: center;
+    color: #CCCCCC;
+    font-size: 14px;
+    margin: auto auto;
+}

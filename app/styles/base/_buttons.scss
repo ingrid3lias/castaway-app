@@ -1,0 +1,83 @@
+// Buttons
+// ========================================
+
+//////// SIGN IN/SIGN UP ////////
+
+.sign-in,
+.sign-up {
+    width: 110px;
+    letter-spacing: 1.6px;
+}
+
+.sign-in {
+    color: #FFFFFF;
+    background-color: transparent;
+    border: 1px solid #FFFFFF;
+    margin-right: 20px;
+}
+
+.sign-up {
+    color: #333333;
+    background-color: #FFFFFF;
+    margin-left: 20px;
+}
+
+.sign-up:hover,
+.sign-in:hover {
+    background-color: #EA6045;
+    color: #FFFFFF;
+    border: transparent;
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, .5);
+}
+
+//////// CALL TO ACTION ////////
+
+.call-to-action {
+    color: #FFFFFF;
+    font-weight: 500;
+    letter-spacing: 1.6px;
+    background-color: #EA6045;
+    margin-top: 4rem;
+    margin-bottom: 8rem;
+    padding: 1rem 2.5rem;
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, .5);
+}
+
+.call-to-action.final-btn {
+    background-color: #F8CA4D;
+}
+
+.call-to-action:hover {
+    color: #FFFFFF;
+    background-color: #F8CA4D;
+}
+
+.call-to-action.final-btn:hover {
+    background-color: #EA6045; 
+}
+
+//////// VIEW NAVIGATION ////////
+
+.profile-btn {
+  font-weight: 500;
+  letter-spacing: 1.6px;
+  font-size: 20px;
+  font-family: 'Open Sans';
+  color: #333333;
+  background-color: transparent;
+  border: 1px solid #333333;
+  padding: 5px 25px;
+}
+
+.profile-btn:hover,
+.profile-btn:active {
+  background-color: #EA6045;
+  border: 1px solid #EA6045;
+  color: #FFFFFF;
+}
+
+.profile-interaction-btn ul.btn-list.user-btn {
+  display: flex;
+  justify-content: flex-end;
+  
+}
