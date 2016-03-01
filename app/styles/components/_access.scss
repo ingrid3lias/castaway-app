@@ -1,0 +1,21 @@
+// Sign In/Sign Up Styles
+// ========================================
+
+.access-window {
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  background-color: rgba(0,0,0,.45);
+  left: 0;
+  bottom: 0;
+}
+
+.authentication-window {
+  width: 500px;
+  height: 700px;
+  background-color: #FFFFFF;
+  position: fixed;
+  z-index: 1;
+  left: 50%;
+  top: 50%;
+}
