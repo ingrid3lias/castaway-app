@@ -15,7 +15,7 @@
 
 .authentication-window {
   width: 740px;
-  height: 690px;
+  height: 700px;
   border-radius: 9px;
   background-color: #FFFFFF;
   position: fixed;
@@ -27,7 +27,7 @@
 }
 
 .top-bar {
-  height: 100px;
+  height: 80px;
   width: 100%;
   position: relative;
   border-top-left-radius: 9px;
@@ -41,13 +41,21 @@
 .password-group,
 .agreement,
 .authenticate-btn-list,
-.wrong-access {
-  margin-top: 30px;
+.wrong-access,
+legend {
+  margin-top: 25px;
+  margin-bottom: 0;
 }
 
 .access-logo {
   height: 60px;
-  width: auto;
+  margin-left: 30px;
+  margin-top: 10px;
+}
+
+.access-welcome {
+  margin-right: 100px;
+  font-size: 32px;
 }
 
 .access-form {
@@ -69,6 +77,11 @@
 
 input.password-input {
   width: 320px;
+  height: 50px;
+}
+
+input.email-input {
+  height: 50px;
 }
 
 label.label,
@@ -78,8 +91,12 @@ label.label,
   font-size: 20px;
   font-weight: 100;
   letter-spacing: 0;
-  padding-left: 0;
+  padding: 0;
   line-height: 20px;
+}
+
+.agreement.checkbox h6 {
+  padding-left: 15px;
 }
 
 .checkbox a,
@@ -88,9 +105,17 @@ label.label,
   font-weight: 600;
 }
 
-.wrong-access {
+.wrong-access,
+.or {
   letter-spacing: 0;
   text-align: center;
 }
 
+.or {
+  color: #333333;
+  margin-top: 35px;
+  font-family: 'Open Sans';
+  font-weight: 600;
+  margin-bottom: 0;
+}
 
