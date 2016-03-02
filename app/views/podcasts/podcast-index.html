@@ -6,6 +6,11 @@
     <!-- CONTENT BASED ON VIEW -->
     <div class="main-content col-md-7 col-sm-12">
       
+      <p
+         ng-repeat="podcast in podcastIndex.podcasts">
+        {{podcast.podcast_title}}
+      </p> 
+      
       <div>
         <ca-podcast-episode></ca-podcast-episode>
       </div>
