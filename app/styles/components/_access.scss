@@ -15,7 +15,7 @@
 
 .authentication-window {
   width: 740px;
-  height: 700px;
+  height: 690px;
   border-radius: 9px;
   background-color: #FFFFFF;
   position: fixed;
@@ -37,28 +37,60 @@
   justify-content: space-between;
 }
 
+.email-group,
+.password-group,
+.agreement,
+.authenticate-btn-list,
+.wrong-access {
+  margin-top: 30px;
+}
+
 .access-logo {
   height: 60px;
-  wdith: auto;
+  width: auto;
 }
 
 .access-form {
   margin: 40px;
+  text-align: left;
 }
 
-.social-media-access,
-.authenticate-btn-list {
+.social-media-access ul,
+.authenticate-btn-list ul {
+  padding: 0;
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
+}
+
+.password-group {
+  display: flex;
+  justify-content: space-between;
+}
+
+input.password-input {
+  width: 320px;
 }
 
 label.label,
-.agreement {
+.agreement.checkbox h6 {
   color: #333333;
   font-family: 'Open Sans';
   font-size: 20px;
   font-weight: 100;
   letter-spacing: 0;
+  padding-left: 0;
+  line-height: 20px;
+}
+
+.checkbox a,
+.wrong-access a {
+  color: #333333;
+  font-weight: 600;
+}
+
+.wrong-access {
+  letter-spacing: 0;
+  text-align: center;
 }
 
 
