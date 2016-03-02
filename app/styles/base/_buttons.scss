@@ -30,6 +30,40 @@
     box-shadow: 2px 2px 4px rgba(0, 0, 0, .5);
 }
 
+//////// ACCESS WINDOW ////////
+
+.social-btn,
+.account-access-btn {
+  color: #FFFFFF;
+  box-shadow: 2px 2px 4px rgba(0, 0, 0, .5);
+}
+
+.social-btn,
+.account-access-btn,
+.account-cancel-btn {
+  font-family: 'Open Sans';
+  font-size: 20px;
+  font-weight: 500;
+  letter-spacing: 0;
+}
+
+.facebook-btn {
+  background-color: #3b5998;
+}
+
+.twitter-btn {
+  background-color: #55ACEE;
+}
+
+.account-access-btn {
+  background-color: #EA6045;
+}
+
+.account-cancel-btn {
+  color: #333333;
+  border: 1px solid #333333;
+}
+
 //////// CALL TO ACTION ////////
 
 .call-to-action {

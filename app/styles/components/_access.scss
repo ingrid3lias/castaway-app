@@ -8,14 +8,57 @@
   background-color: rgba(0,0,0,.45);
   left: 0;
   bottom: 0;
+  color: #FFFFFF;
+  letter-spacing: 2.24px;
+  font-size: 28px;
 }
 
 .authentication-window {
-  width: 500px;
+  width: 740px;
   height: 700px;
+  border-radius: 9px;
   background-color: #FFFFFF;
   position: fixed;
-  z-index: 1;
-  left: 50%;
-  top: 50%;
+  top:0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
 }
+
+.top-bar {
+  height: 100px;
+  width: 100%;
+  position: relative;
+  border-top-left-radius: 9px;
+  border-top-right-radius: 9px;
+  background-color: #F8CA4D;
+  display: flex;
+  justify-content: space-between;
+}
+
+.access-logo {
+  height: 60px;
+  wdith: auto;
+}
+
+.access-form {
+  margin: 40px;
+}
+
+.social-media-access,
+.authenticate-btn-list {
+  display: flex;
+  justify-content: space-around;
+}
+
+label.label,
+.agreement {
+  color: #333333;
+  font-family: 'Open Sans';
+  font-size: 20px;
+  font-weight: 100;
+  letter-spacing: 0;
+}
+
+
