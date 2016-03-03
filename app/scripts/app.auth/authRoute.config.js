@@ -10,10 +10,10 @@
     $stateProvider
       // Auth Index
       .state('base.auth', {
-        url: '/session',
+        url: '/auth',
         views: {
           'view': {
-            templateUrl: '',
+            templateUrl: 'views/auth/index.html',
           }
         }
       })
