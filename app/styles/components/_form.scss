@@ -1,0 +1,57 @@
+// Form Styles
+// ========================================
+
+form {
+  text-align: left;
+  padding: 30px;
+  font-family: 'Open Sans';
+  font-size: 20px;
+  letter-spacing: 0;
+}
+
+fieldset {
+  margin-bottom: 30px;
+}
+
+.form-group {
+  margin: 0 10px;
+  width: 100%;
+}
+
+.password-group {
+  display: flex;
+}
+
+.social-media-access,
+.authenticate-btn-list {
+  padding: 0;
+  display: flex;
+  justify-content: space-around;
+}
+
+label.label,
+.checkbox-label {
+  color: #333333;
+  font-weight: 100;
+  padding: 0;
+}
+
+.checkbox {
+  margin: 0 0 0 10px;
+}
+
+.checkbox-label {
+  padding-left: 10px;
+  margin: 3px 0 0 0;
+}
+
+.checkbox-label a,
+.wrong-access a {
+  color: #333333;
+  font-weight: 600;
+}
+
+.wrong-access {
+  text-align: center;
+}
+

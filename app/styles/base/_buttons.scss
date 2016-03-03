@@ -30,11 +30,10 @@
     box-shadow: 2px 2px 4px rgba(0, 0, 0, .5);
 }
 
-//////// ACCESS WINDOW ////////
+//////// FORM BUTTONS ////////
 
 .social-btn,
 .account-access-btn {
-  color: #FFFFFF;
   box-shadow: 2px 2px 4px rgba(0, 0, 0, .5);
 }
 
@@ -42,9 +41,12 @@
 .account-access-btn,
 .account-cancel-btn {
   font-family: 'Open Sans';
-  font-size: 20px;
+  color: #FFFFFF;
+  font-size: 15px;
   font-weight: 500;
   letter-spacing: 0;
+  padding: 10px 0;
+  margin: 0 10px;
 }
 
 .social-btn i {
@@ -52,20 +54,10 @@
 }
 
 .facebook-btn,
-.twitter-btn {
-  width: 320px;
-}
-
-a.facebook-btn,
-a.twitter-btn,
-a.account-access-btn,
-a.account-cancel-btn {
-  padding: 12px 0;
-}
-
+.twitter-btn,
 .account-access-btn,
 .account-cancel-btn {
-  width: 240px;
+  width: 100%;
 }
 
 .facebook-btn {
@@ -82,7 +74,22 @@ a.account-cancel-btn {
 
 .account-cancel-btn {
   color: #333333;
+  background-color: #FFFFFF;
   border: 1px solid #333333;
+}
+
+.facebook-btn:hover,
+.twitter-btn:hover,
+.account-access-btn:hover {
+  background-color: #FFFFFF;
+  border: 1px solid #333333;
+  color: #333333;
+}
+
+.account-cancel-btn:hover {
+  background-color: #000000;
+  color: #FFFFFF;
+  border: 1px solid #000000;
 }
 
 //////// CALL TO ACTION ////////
