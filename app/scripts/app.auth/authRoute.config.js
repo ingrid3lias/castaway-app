@@ -19,15 +19,15 @@
       })
       .state('base.auth.signIn', {
         url: '/sign-in',
-        template: ''
+        template: '<ca-sign-in-form></ca-sign-in-form>'
       })
       .state('base.auth.signUp', {
         url: '/sign-up',
-        template: ''
+        template: '<ca-sign-up-form></ca-sign-up-form>'
       })
       .state('base.auth.password', {
         url: '/password',
-        template: ''
+        template: '<ca-password-form></ca-password-form>'
       })
 
 
