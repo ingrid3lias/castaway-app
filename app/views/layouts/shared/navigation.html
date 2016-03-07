@@ -9,15 +9,21 @@
       </div>
   </div>
   <div class="col-md-3 col-sm-6 hidden-xs nav-links">
-      <!--<ul class="account-buttons">
-          <li><a href="#" class="btn btn-default sign-in" role="button">Sign In</a></li>
-          <li><a href="#" class="btn btn-default sign-up" role="button">Sign Up</a></li>
-      </ul> -->
-      <ul
-          class="account-buttons user-links"
-          >
+      <ul class="account-buttons">
+          <li><a ui-sref="base.auth.signIn" class="btn btn-default sign-in" role="button" ng-click="modalCtrl.toggleModal($event)">Sign In</a></li>
+          <li><a ui-sref="base.auth.signUp" class="btn btn-default sign-up" role="button">Sign Up</a></li>
+      </ul>
+      <!--<ul class="account-buttons user-links">
           <li class="profile-link"><a href="#">Collection</button></a></li>
           <li class="profile-link"><a href="#">Ingrid E.</button></a></li>
-      </ul>
+      </ul>-->
   </div>
 </nav>
+
+<modal>
+  <div class="modal-header">
+    <a href="#" ng-click="modalCtrl.toggleModal($event)"><img class="modal-logo" src="images/castaway_logo.png"></a>
+    <h4 class="modal-message">Nice to see you back!</h4>
+  </div>
+  <ca-sign-in-form></ca-sign-in-form>
+</modal>

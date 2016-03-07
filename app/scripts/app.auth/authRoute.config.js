@@ -1,9 +1,9 @@
 (function () {
   angular
-    .module('app')
-    .config(['$stateProvider', '$urlRouterProvider', AuthRouteConfig]);
+    .module('app.auth')
+    .config(['$stateProvider', '$urlRouterProvider', '$locationProvider', AuthRouteConfig]);
 
-  function AuthRouteConfig ($stateProvider, $urlRouterProvider) {
+  function AuthRouteConfig ($stateProvider, $urlRouterProvider, $locationProvider) {
 
    // $urlRouterProvider.when('/session', '/session/sign-in');
 

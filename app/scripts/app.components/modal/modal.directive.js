@@ -21,8 +21,8 @@
     // Toggle Modal Open/Closed
     vm.modalVisible = false;
     vm.toggleModal = function (event) {
-    event.preventDefault();
-    vm.modalVisible = !vm.modalVisible;
+      event.preventDefault();
+      vm.modalVisible = !vm.modalVisible;
     };
 
     }
