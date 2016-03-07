@@ -10,8 +10,8 @@
   </div>
   <div class="col-md-3 col-sm-6 hidden-xs nav-links">
       <ul class="account-buttons">
-          <li><a ui-sref="base.auth.signIn" class="btn btn-default sign-in" role="button" ng-click="modalCtrl.toggleModal($event)">Sign In</a></li>
-          <li><a ui-sref="base.auth.signUp" class="btn btn-default sign-up" role="button">Sign Up</a></li>
+          <li><a ui-sref="base.auth.signIn" class="btn btn-default sign-in" role="button" ui-sref-active="active-btn" ng-click="modalCtrl.toggleModal($event)">Sign In</a></li>
+          <li><a ui-sref="base.auth.signUp" class="btn btn-default sign-up" role="button" ui-sref-active="active-btn" ng-click="modalCtrl.toggleModal($event)">Sign Up</a></li>
       </ul>
       <!--<ul class="account-buttons user-links">
           <li class="profile-link"><a href="#">Collection</button></a></li>
