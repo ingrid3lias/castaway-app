@@ -13,7 +13,7 @@
       controllerAs: 'modal',
       controller: [ModalCtrl]
     };
-
+  }
     function ModalCtrl () {
       var vm = this;
       
@@ -26,5 +26,5 @@
     };
 
     }
-  }
+  
 })();
