@@ -11,6 +11,7 @@
   color: #FFFFFF;
   letter-spacing: 2.24px;
   font-size: 28px;
+  z-index: 99;
 }
 
 .authentication-window {
@@ -24,4 +25,5 @@
   left: 0;
   right: 0;
   margin: 100px auto;
+  z-index: 999;
 }
