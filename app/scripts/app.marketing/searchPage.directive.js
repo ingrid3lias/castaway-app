@@ -9,7 +9,7 @@
       scope: {},
       bindToController: true,
       templateUrl: 'views/marketing/search.html',
-      controllerAs: 'searchItem',
+      controllerAs: 'searchPage',
       controller: ['PodcastLookup', SearchPageCtrl]
     };
 

@@ -23,7 +23,7 @@
             url: '/search',
             views: {
                 'view': {
-                    templateUrl: 'views/marketing/search.html'
+                    template: '<ca-search-page></ca-search-page>'
                 }
             }
         })
