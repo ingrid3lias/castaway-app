@@ -1,14 +1,14 @@
 <div ng-repeat="podcast in searchItem.podcasts.result | filter: podcastLookup">
   <div class="col-md-3 col-sm-6 col-xs-12">
     <div class="image-overlay">
-      <a href="#">
+      <a ui-sref="podcast.podcastIndex.podcast">
         <img class="podcast-avatar" src="{{podcast.podcast_icon}}">
       </a>
     </div>
-      <a href="#">
+      <a ui-sref="podcast.podcastIndex.podcast">
         <h5 class="item-title">{{podcast.podcast_title}}</h5>
       </a>
-      <a href="#">
+      <a ui-sref="podcast.podcastIndex.podcast">
         <h6 class="item-creator">{{podcast.podcast_network}}</h6>
       </a>
   </div>

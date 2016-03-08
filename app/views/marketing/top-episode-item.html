@@ -1,0 +1,9 @@
+<div ng-repeat="podcast in topEpisodeItem.podcasts.result.slice(5,10)">
+  <div class="col-md-2 col-sm-6 col-xs-12">
+    <div class="image-overlay">
+      <a href="#"><img class="podcast-avatar" src="{{podcast.podcast_icon}}"></a>
+    </div>
+    <a href="#"><h5 class="item-title">{{podcast.podcast_title}}</h5></a>
+    <a href="#"><h6 class="item-creator">{{podcast.podcast_episode}}</h6></a>
+  </div>
+</div>
