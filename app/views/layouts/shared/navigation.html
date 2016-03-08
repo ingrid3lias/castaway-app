@@ -14,12 +14,12 @@
               <a 
                 class="btn btn-default sign-in" 
                 role="button" 
-                ng-click="modalCtrl.toggleModal($event)">Sign In</a></li>
+                ng-click="signIn()">Sign In</a></li>
           <li>
               <a 
                 class="btn btn-default sign-up" 
                 role="button"
-                ng-click="modalCtrl.toggleModal($event)">Sign Up</a></li>
+                ng-click="signUp()">Sign Up</a></li>
       </ul>
       <!--<ul class="account-buttons user-links">
           <li class="profile-link"><a href="#">Collection</button></a></li>
@@ -28,7 +28,7 @@
   </div>
 </nav>
 
-<modal>
+<!--<modal>
   <div class="modal-header">
     <a href="#"><img class="modal-logo" src="images/castaway_logo.png"></a>
     <h4 class="modal-message">Nice to see you back!</h4>
@@ -37,10 +37,45 @@
   <ca-sign-in-form></ca-sign-in-form>
 </modal>
 
-<!--<modal>
+<modal>
   <div class="modal-header">
     <a href="#"><img class="modal-logo" src="images/castaway_logo.png"></a>
     <h4 class="modal-message">Welcome to Castaway!</h4>
   </div>
   <ca-sign-up-form></ca-sign-up-form>
 </modal>-->
+
+<modal>
+  
+  <div ng-switch-when="sign-in">
+    <div class="modal-header">
+      <a href="#"><img class="modal-logo" src="images/castaway_logo.png"></a>
+      <h4 class="modal-message">Nice to see you back!</h4>
+      <a href="#" ng-click="close()"><i class="close-button fa fa-times-circle"></i></a>
+    </div>
+    <ca-sign-in-form></ca-sign-in-form>
+  </div>
+  
+  <div ng-switch-when="sign-up">
+    <div class="modal-header">
+      <a href="#"><img class="modal-logo" src="images/castaway_logo.png"></a>
+      <h4 class="modal-message">Welcome to Castaway!</h4>
+      <a href="#" ng-click="close()"><i class="close-button fa fa-times-circle"></i></a>
+    </div>
+    <ca-sign-up-form></ca-sign-up-form>
+  </div>
+
+  <div ng-switch-when="password">
+    <div class="modal-header">
+        <a href="#"><img class="modal-logo" src="images/castaway_logo.png"></a>
+        <h4 class="modal-message">Forgot your password?</h4>
+        <a href="#" ng-click="close()"><i class="close-button fa fa-times-circle"></i></a>
+    </div>
+    <ca-password-form></ca-password-form>
+  </div>
+  
+</modal>
+
+
+
+

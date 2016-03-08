@@ -1,4 +1,7 @@
-<div class="access-window" ng-show="modalCtrl.modalVisible">
+<div bn-modals
+     class="access-window" 
+     ng-show="subview"
+     ng-switch="subview">
   <div class="authentication-window">
   <div class="modal_content" ng-transclude></div>
   </div>
