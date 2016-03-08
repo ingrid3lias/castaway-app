@@ -10,13 +10,14 @@
       bindToController: true,
       templateUrl: 'views/podcasts/content/podcast-episode.html',
       controllerAs: 'podcastEpisode',
-      controller: [PodcastEpisodeCtrl]
+      controller: ['PodcastLookup', PodcastEpisodeCtrl]
     };
 
-    function PodcastEpisodeCtrl () {
+    function PodcastEpisodeCtrl (PodcastLookup) {
       var vm = this;
 
-
+      vm.podcasts = PodcastLookup.query();
+      
     }
   }
 })();

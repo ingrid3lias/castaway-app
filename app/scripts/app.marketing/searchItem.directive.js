@@ -10,13 +10,14 @@
       bindToController: true,
       templateUrl: 'views/marketing/search-item.html',
       controllerAs: 'searchItem',
-      controller: [SearchItemCtrl]
+      controller: ['PodcastLookup', SearchItemCtrl]
     };
 
-    function SearchItemCtrl () {
+    function SearchItemCtrl (PodcastLookup) {
       var vm = this;
 
-
+      vm.podcasts = PodcastLookup.query();
+      
     }
   }
 })();

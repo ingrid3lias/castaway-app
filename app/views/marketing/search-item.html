@@ -1,13 +1,15 @@
-<div class="col-md-3 col-sm-6 col-xs-12">
-  <div class="image-overlay">
-    <a href="#">
-      <img class="podcast-avatar" src="images/podcast-icons/99invisible.jpg">
-    </a>
+<div ng-repeat="podcast in searchItem.podcasts.result | filter: podcastLookup">
+  <div class="col-md-3 col-sm-6 col-xs-12">
+    <div class="image-overlay">
+      <a href="#">
+        <img class="podcast-avatar" src="{{podcast.podcast_icon}}">
+      </a>
+    </div>
+      <a href="#">
+        <h5 class="item-title">{{podcast.podcast_title}}</h5>
+      </a>
+      <a href="#">
+        <h6 class="item-creator">{{podcast.podcast_network}}</h6>
+      </a>
   </div>
-    <a href="#">
-      <h5 class="item-title">99% Invisible</h5>
-    </a>
-    <a href="#">
-      <h6 class="item-creator">Roman Mars</h6>
-    </a>
-</div>
+</div>  

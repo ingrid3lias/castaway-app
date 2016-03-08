@@ -1,30 +1,30 @@
-    <div class="profile-summary col-md-5 cold-sm-12">
+<div class="profile-summary col-md-5 cold-sm-12">
       <!-- STATISTICS BASED ON PROFILE -->
       <div class="profile-stats">
         <div class="stat-box">
-          <h3 class="stat-number">13K</h3>
+          <h3 class="stat-number">{{podcast.followers}}</h3>
           <h5 class="stat-title">Followers</h5>
         </div>
         <div class="stat-box middle-box">
           <h3 class="stat-number">15</h3>
-          <h5 class="stat-title">Podcasts</h5>
+          <h5 class="stat-title">Episodes</h5>
         </div>
         <div class="stat-box">
-          <h3 class="stat-number">1,300</h3>
+          <h3 class="stat-number">{{podcast.likes}}</h3>
           <h5 class="stat-title">Likes</h5>
         </div>
       </div>
       <!-- BIO BASED ON PROFILE -->
       <div class="profile-bio">
-        <h4 class="bio-title">Get to know The Maximum Fun Network!</h4>
-        <h5 class="bio-text">Maximum Fun is an independent podcast and radio show production organization founded and run by Jesse Thorn. The organization originated with Thorn's college radio show The Sound of Young America which continued in an adapted format and with a new name, Bullseye with Jesse Thorn.</h5>
-        <h5 class="homepage"><span class="info-emphasis">Homepage:</span> <a href="www.maximumfun.org">maximumfun.org</a></h5>
+        <h4 class="bio-title">Get to know {{podcast.podcast_title}}!</h4>
+        <h5 class="bio-text">{{podcast.podcast_description}}</h5>
+        <h5 class="homepage"><span class="info-emphasis">Homepage:</span> <a ui-sref="{{podcast.podcast_hp}}">maximumfun.org</a></h5>
         <h5 class="schedule"><span class="info-emphasis">Uploaded:</span> Every Week</h5>
       </div>
       <div class="social-media-links">
-        <ui sref="#"><i class="fa fa-facebook-square"></i></ui>
-        <ui sref="#"><i class="fa fa-twitter-square"></i></ui>
-        <ui sref="#"><i class="fa fa-tumblr-square"></i></ui>
+        <a ui-sref="{{podcast.podcast_fb}}"><i class="fa fa-facebook-square"></i></a>
+        <a ui-sref="{{podcast.podcast_twitter}}"><i class="fa fa-twitter-square"></i></a>
+        <a ui-sref="{{podcast.podcast_tumblr}}"><i class="fa fa-tumblr-square"></i></a>
       </div>
       <!-- RECOMMENDED CONTENT BASED ON PROFILE -->
       <ca-podcast-recommendations></ca-podcast-recommendations>
