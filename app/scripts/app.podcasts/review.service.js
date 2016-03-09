@@ -2,10 +2,10 @@
 (function () {
   angular
     .module('app.podcasts')
-    .factory('PodcastLookup', ['$resource', PodcastLookup]);
+    .factory('PodcastReviews', ['$resource', PodcastReviews]);
 
-  function PodcastLookup ($resource) {
-    return $resource(  'https://sheetsu.com/apis/3eaa67a7', {},
+  function PodcastReviews ($resource) {
+    return $resource(  'https://sheetsu.com/apis/80fdd08d', {},
       {
         'query': {
           method: 'GET',

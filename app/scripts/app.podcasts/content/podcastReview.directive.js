@@ -10,13 +10,14 @@
       bindToController: true,
       templateUrl: 'views/podcasts/content/podcast-review.html',
       controllerAs: 'podcastReview',
-      controller: [PodcastReviewCtrl]
+      controller: ['PodcastReviews', PodcastReviewCtrl]
     };
 
-    function PodcastReviewCtrl () {
+    function PodcastReviewCtrl (PodcastReviews) {
       var vm = this;
-
-
+      
+      vm.reviews = PodcastReviews.query();
+      
     }
   }
 })();
