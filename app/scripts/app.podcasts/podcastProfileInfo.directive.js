@@ -10,13 +10,14 @@
       bindToController: true,
       templateUrl: 'views/podcasts/podcast-profile-info.html',
       controllerAs: 'podcastProfileInfo',
-      controller: [PodcastProfileInfoCtrl]
+      controller: ['PodcastLookup', PodcastProfileInfoCtrl]
     };
 
-    function PodcastProfileInfoCtrl () {
+    function PodcastProfileInfoCtrl (PodcastLookup) {
       var vm = this;
 
-
+      vm.podcasts = PodcastLookup.query();
+      
     }
   }
 })();

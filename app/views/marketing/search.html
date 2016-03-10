@@ -28,14 +28,15 @@
   <div class="search-main row">
     <!-- RESULTS -->
     
-   <!-- <h5 class="spinner" ng-hide="dataLoaded">
-      <i class="fa fa-spinner fa-spin"></i>
-    </h5>
-    <div ng-show="dataLoaded">-->
+    <loading-indicator loading-indicator-model="searchPage.podcastsLoading"></loading-indicator>
     
-      <div class="search-results">
-        
-        <div ng-repeat="podcast in searchPage.podcasts.result | filter: podcastLookup">
+    <div 
+      class="search-results"
+      ng-show="searchPage.podcastsLoaded">
+
+<!--        <div ng-repeat="podcast in searchPage.podcasts.result | filter: podcastLookup | filter:{podcast:true}">-->
+      <ul>
+        <li ng-repeat="podcast in searchPage.podcasts.result | filter: podcastLookup">
           <div class="col-md-3 col-sm-6 col-xs-12">
             <div class="image-overlay">
               <a ui-sref="podcast.podcastIndex.podcast">
@@ -49,16 +50,13 @@
                 <h6 class="item-creator">{{podcast.podcast_network}}</h6>
               </a>
           </div>
-        </div>  
-        
+        </li> 
+      </ul>
+      <div ng-if="!(searchPage.podcasts.result | filter:podcastLookup).length">
+        <h5>No Results</h5>
       </div>
-    
-    <!--</div>-->
-    
-    <div ng-if="!(searchPage.podcasts.result | filter:podcastLookup).length">
-      <h5>No Results</h5>
     </div>
     
-  </div>
+    
 </div>
 <div class="col-md-1"></div>
