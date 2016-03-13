@@ -28,6 +28,8 @@
           vm.podcastsLoading = false;
         })
       
+      //Typeahead
+      
     }
   }
 })();

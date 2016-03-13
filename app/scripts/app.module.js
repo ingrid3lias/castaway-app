@@ -15,7 +15,6 @@
     'ngSanitize',
     'ngResource',
     'ui.router',
-    'angular-click-outside',
     'app.marketing',
     'app.components',
     'app.podcasts',
