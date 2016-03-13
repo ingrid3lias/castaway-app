@@ -1,7 +1,6 @@
 <loading-indicator loading-indicator-model="podcastEpisode.podcastsLoading"></loading-indicator>
 <div ng-show="podcastEpisode.podcastsLoaded">
-  <div ng-repeat="podcast in podcastEpisode.podcasts.result | 
-   filter: podcastLookup">
+  <div ng-repeat="podcast in podcastEpisode.podcasts.result">
     <div class="episode row">
       <div class="episode-icon col-md-4">
         <!--<i class="fa fa-play-circle"></i>-->
