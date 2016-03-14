@@ -1,33 +1,32 @@
 <div class="profile-summary col-md-5 cold-sm-12" 
-     ng-="profile in podcastProfile.podcasts.result">
+     ng-model="podcastProfile.podcasts.result">
       <!-- STATISTICS BASED ON PROFILE -->
       <div class="profile-stats">
         <div class="stat-box">
-          <h3 class="stat-number">{{profile.followers}}</h3>
+          <h3 class="stat-number">{{.followers}}</h3>
           <h5 class="stat-title">Followers</h5>
         </div>
         <div class="stat-box middle-box">
-          <h3 class="stat-number">15</h3>
+          <h3 class="stat-number">{{.podcast_number}}</h3>
           <h5 class="stat-title">Episodes</h5>
         </div>
         <div class="stat-box">
-          <h3 class="stat-number">{{profile.likes}}</h3>
+          <h3 class="stat-number">{{.likes}}</h3>
           <h5 class="stat-title">Likes</h5>
         </div>
       </div>
       <!-- BIO BASED ON PROFILE -->
       <div class="profile-bio">
-        <h4 class="bio-title">Get to know {{profile.podcast_title}}!</h4>
-        <h5 class="bio-text">{{profile.podcast_description}}</h5>
-        <h5 class="homepage"><span class="info-emphasis">Homepage:</span> <a ui-sref="{{profile.podcast_hp}}">maximumfun.org</a></h5>
-        <h5 class="schedule"><span class="info-emphasis">Uploaded:</span> {{profile.podcast_schedule}}</h5>
+        <h4 class="bio-title">Get to know {{.podcast_title}}!</h4>
+        <h5 class="bio-text">{{.podcast_description}}</h5>
+        <h5 class="homepage"><span class="info-emphasis">Homepage:</span> <a ui-sref="{{.podcast_hp}}">{{display_name}}</a></h5>
+        <h5 class="schedule"><span class="info-emphasis">Uploaded:</span> {{.podcast_schedule}}</h5>
       </div>
       <div class="social-media-links">
-        <a ui-sref="{{profile.podcast_fb}}"><i class="fa fa-facebook-square"></i></a>
-        <a ui-sref="{{profile.podcast_twitter}}"><i class="fa fa-twitter-square"></i></a>
-        <a ui-sref="{{profile.podcast_tumblr}}"><i class="fa fa-tumblr-square"></i></a>
+        <a ui-sref="{{.podcast_fb}}"><i class="fa fa-facebook-square"></i></a>
+        <a ui-sref="{{.podcast_twitter}}"><i class="fa fa-twitter-square"></i></a>
+        <a ui-sref="{{.podcast_tumblr}}"><i class="fa fa-tumblr-square"></i></a>
       </div>
-      <!-- RECOMMENDED CONTENT BASED ON PROFILE -->
+      <!-- RECOMMENDED CONTENT -->
       <ca-podcast-recommendations></ca-podcast-recommendations>
-      
     </div>

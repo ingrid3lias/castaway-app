@@ -54,8 +54,13 @@ li {
   margin-right: 150px;
 }
 
+loading-indicator {
+  display: flex;
+  justify-content: center;
+}
+
 .spinner {
   margin-top: 30px;
-  font-size: 60px;
-  color: #EA6045;
+  font-size: 40px;
+  color: #333333;
 }

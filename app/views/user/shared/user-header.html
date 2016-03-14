@@ -1,16 +1,15 @@
-  
 <header class="profile-header-image row">
   <div class="col-md-1 hidden-sm hidden-xs"></div>
   <div class="profile-header col-md-10 col-sm-12 row">
     <div class="col-md-3 profile-avatar">
-      <img class="profile-icon" src="../../images/podcast-icons/Podcast%20Avatar_user.png">
+      <img class="profile-icon" src="{{.user_icon}}">
     </div>
     <div class="col-md-9 profile-information">
       <div class="profile-top">  
-        <h3 class="profile-title">mums_the_word</h3>
+        <h3 class="profile-title">{{.user_name}}</h3>
       </div>
-      <h4 class="profile-sub-text">Feminnasty & Fancy Free!</h4>
-      <h5 class="profile-classification">Joined: Sep 04, 2015</h5>
+      <h4 class="profile-sub-text">{{.user_tagline}}</h4>
+      <h5 class="profile-classification">Joined: {{.user_joined}}</h5>
     </div>
   </div>
   <div class="col-md-1 hidden-sm hidden-xs"></div>
