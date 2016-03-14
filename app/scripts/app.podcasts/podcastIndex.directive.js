@@ -10,16 +10,15 @@
       bindToController: true,
       templateUrl: 'views/podcasts/podcast-index.html',
       controllerAs: 'podcastIndex',
-      controller: ['PodcastLookup', 'PodcastReviews', PodcastIndexCtrl]
+      controller: ['PodcastLookup', 'PodcastReviews', 'PodcastAnnouncements', PodcastIndexCtrl]
     };
 
-    function PodcastIndexCtrl (PodcastLookup, PodcastReviews) {
+    function PodcastIndexCtrl (PodcastLookup, PodcastReviews, PodcastAnnouncements) {
       var vm = this;
       
-      
        vm.podcasts = PodcastLookup.query();
-      
        vm.reviews = PodcastReviews.query();
+       vm.annnouncement = PodcastAnnouncements.query();
 
     }
   }
