@@ -10,13 +10,13 @@
       bindToController: true,
       templateUrl: 'views/podcasts/podcast-profile-info.html',
       controllerAs: 'podcastProfileInfo',
-      controller: ['PodcastLookup', PodcastProfileInfoCtrl]
+      controller: ['$stateParams', 'PodcastLookup', PodcastProfileInfoCtrl]
     };
 
-    function PodcastProfileInfoCtrl (PodcastLookup) {
+    function PodcastProfileInfoCtrl ($stateParams, PodcastLookup) {
       var vm = this;
-
-      vm.podcasts = PodcastLookup.query();
+        
+      vm.podcast = PodcastLookup.get({podcast_id: $stateParams.podcast_id});
       
     }
   }

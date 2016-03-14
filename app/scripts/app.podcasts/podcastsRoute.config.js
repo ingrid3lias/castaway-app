@@ -31,8 +31,8 @@
         template: '<ca-podcast-episode-index></ca-podcast-episode-index>'
       })
       .state('podcast.podcastIndex.podcast', {
-        url: '/podcast',
-        template: '<ca-podcast-podcast-index></ca-podcast-podcast-index>'
+        url: '/podcast/:podcast_id',
+        template: '<ca-podcast-index></ca-podcast-index>'
       })
       .state('podcast.podcastIndex.station', {
         url: '/station',
@@ -67,15 +67,15 @@
         template: '<ca-podcast-episode-index></ca-podcast-episode-index>'
       })
       .state('podcast.episodeIndex.station', {
-        url: '/index',
+        url: '/station',
         template: '<ca-podcast-station-index></ca-podcast-station-index>'
       })
       .state('podcast.episodeIndex.announcement', {
-        url: '/index',
+        url: '/announcements',
         template: '<ca-podcast-announcement-index></ca-podcast-announcement-index>'
       })
       .state('podcast.episodeIndex.review', {
-        url: '/index',
+        url: '/reviews',
         template: '<ca-podcast-review-index></ca-podcast-review-index>'
       })
     //end of states
