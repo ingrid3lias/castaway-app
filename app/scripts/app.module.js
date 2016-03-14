@@ -6,6 +6,8 @@
   
   angular.module('app.podcasts', []);
   
+  angular.module('app.network', []);
+  
   angular.module('app.user', []);
   
   angular.module('app.auth', []);
@@ -18,6 +20,7 @@
     'app.marketing',
     'app.components',
     'app.podcasts',
+    'app.network',
     'app.user',
     'app.auth'
   ]);
