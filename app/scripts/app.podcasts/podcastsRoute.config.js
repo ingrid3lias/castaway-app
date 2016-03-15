@@ -5,8 +5,9 @@
 
   function PodcastsRouteConfig ($stateProvider, $urlRouterProvider, $locationProvider) {
     
+    $urlRouterProvider.when('/review', '/review/:podcast_id');
+    
     $stateProvider
-      
     // Podcast Index
       .state('podcast.podcastIndex', {
         url: '/podcast',
@@ -27,7 +28,7 @@
         template: '<ca-podcast-index></ca-podcast-index>'
       })
       .state('podcast.podcastIndex.station', {
-        url: '/station',
+        url: '/station/:podcast_id',
         template: '<ca-podcast-station-index></ca-podcast-station-index>'
       })
       .state('podcast.podcastIndex.announcement', {

@@ -39,14 +39,14 @@
         <li ng-repeat="podcast in searchPage.podcasts.result | filter: podcastLookup">
           <div class="col-md-3 col-sm-6 col-xs-12">
             <div class="image-overlay">
-              <a ui-sref="podcast.podcastIndex.index({podcast_id: podcast.podcast_id})">
+              <a>
                 <img class="podcast-avatar" src="{{podcast.podcast_icon}}">
               </a>
             </div>
               <a ui-sref="podcast.podcastIndex.index({podcast_id: podcast.podcast_id})">
                 <h5 class="item-title">{{podcast.podcast_title}}</h5>
               </a>
-              <a ui-sref="podcast.networkIndex.index({network_id:network.network_id})">
+              <a ui-sref="podcast.networkIndex.index({network_id:podcast.network_id})">
                 <h6 class="item-creator">{{podcast.podcast_network}}</h6>
               </a>
           </div>

@@ -18,7 +18,6 @@
       
        vm.podcast = PodcastLookup.get({podcast_id: $stateParams.podcast_id});
      
-
     }
   }
 })();

@@ -10,12 +10,13 @@
       bindToController: true,
       templateUrl: 'views/network/network-index.html',
       controllerAs: 'networkIndex',
-      controller: [NetworkIndexCtrl]
+      controller: ['$stateParams', 'PodcastLookup', NetworkIndexCtrl]
     };
 
-    function NetworkIndexCtrl () {
+    function NetworkIndexCtrl ($stateParams, PodcastLookup) {
       var vm = this;
       
+      vm.podcast = PodcastLookup.get({podcast_id: $stateParams.podcast_id});
 
     }
   }
