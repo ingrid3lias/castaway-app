@@ -4,9 +4,9 @@
     .config(['$stateProvider', '$urlRouterProvider', '$locationProvider', NetworkRouteConfig]);
 
   function NetworkRouteConfig ($stateProvider, $urlRouterProvider, $locationProvider) {
-    
+
     $stateProvider
-      
+
     // Network Index
       .state('network.networkIndex', {
         url: '/network',
@@ -30,10 +30,10 @@
         url: '/podcast/:podcast_id',
         template: ''
       })
-      .state('podcast.podcastIndex.station', {
-        url: '/station',
-        template: ''
-      })
+      // .state('podcast.podcastIndex.station', {
+      //   url: '/station',
+      //   template: ''
+      // })
       .state('network.networkIndex.announcement', {
         url: '/announcement',
         template: ''
@@ -42,7 +42,7 @@
         url: '/review',
         template: ''
       })
-    
+
     //end of states
   }
 })();

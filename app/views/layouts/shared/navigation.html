@@ -3,28 +3,27 @@
       <a href="#"><img class="nav-logo" src="images/castaway_logo.png"></a>
   </div>
   <div class="col-md-6 hidden-sm hidden-xs nav-search">
-      <div class="search">
-        <input type="text" ng-model="podcastLookup" class="form-control search-bar" placeholder="Search for Podcasts">
-        <button type="submit"><a href="/#/search"><i class="fa fa-search"></i></a></button>
-      </div>
+    <div class="search">
+      <ca-typeahead-search></ca-typeahead-search>
+    </div>
   </div>
   <div class="col-md-3 col-sm-6 hidden-xs nav-links">
-      <ul class="account-buttons">
-          <li>
-              <a 
-                class="btn btn-default sign-in" 
-                role="button" 
-                ng-click="modalCtrl.toggleModal($event)">Sign In</a></li>
-          <li>
-              <a 
-                class="btn btn-default sign-up" 
-                role="button"
-                ng-click="modalCtrl.toggleModal($event)">Sign Up</a></li>
-      </ul>
-      <!--<ul class="account-buttons user-links">
-          <li class="profile-link"><a href="#">Collection</button></a></li>
-          <li class="profile-link"><a href="#">Ingrid E.</button></a></li>
-      </ul>-->
+    <ul class="account-buttons">
+      <li>
+        <a
+          class="btn btn-default sign-in"
+          role="button"
+          ng-click="modalCtrl.toggleModal($event)">Sign In</a></li>
+      <li>
+        <a
+          class="btn btn-default sign-up"
+          role="button"
+          ng-click="modalCtrl.toggleModal($event)">Sign Up</a></li>
+    </ul>
+    <!--<ul class="account-buttons user-links">
+        <li class="profile-link"><a href="#">Collection</button></a></li>
+        <li class="profile-link"><a href="#">Ingrid E.</button></a></li>
+    </ul>-->
   </div>
 </nav>
 
