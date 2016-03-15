@@ -10,6 +10,11 @@
         'query': {
           method: 'GET',
           isArray: false
+        },
+        'get': {
+          method: 'GET',
+          url: 'https://sheetsu.com/apis/v1.0/80fdd08d/podcast_id/:podcast_id',
+          isArray: true
         }
       }
     );

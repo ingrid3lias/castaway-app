@@ -23,15 +23,7 @@
         }
       })
       .state('podcast.podcastIndex.index', {
-        url: '/index',
-        template: '<ca-podcast-index></ca-podcast-index>'
-      })
-      .state('podcast.podcastIndex.episode', {
-        url: '/episode',
-        template: '<ca-podcast-episode-index></ca-podcast-episode-index>'
-      })
-      .state('podcast.podcastIndex.podcast', {
-        url: '/podcast/:podcast_id',
+        url: '/index/:podcast_id',
         template: '<ca-podcast-index></ca-podcast-index>'
       })
       .state('podcast.podcastIndex.station', {
@@ -39,11 +31,11 @@
         template: '<ca-podcast-station-index></ca-podcast-station-index>'
       })
       .state('podcast.podcastIndex.announcement', {
-        url: '/announcement',
+        url: '/announcement/:podcast_id',
         template: '<ca-podcast-announcement-index></ca-podcast-announcement-index>'
       })
       .state('podcast.podcastIndex.review', {
-        url: '/review',
+        url: '/review/:podcast_id',
         template: '<ca-podcast-review-index></ca-podcast-review-index>'
       })
     

@@ -1,19 +1,19 @@
 (function () {
   angular
-    .module('app.podcasts')
-    .directive('caPodcastEpisode', caPodcastEpisode);
+    .module('app.network')
+    .directive('caNetworkPodcastList', caNetworkPodcastList);
 
-  function caPodcastEpisode () {
+  function caNetworkPodcastList () {
     return {
       restrict: 'E',
       scope: {},
       bindToController: true,
-      templateUrl: 'views/podcasts/content/podcast-episode.html',
-      controllerAs: 'podcastEpisode',
-      controller: ['$stateParams', 'PodcastLookup', PodcastEpisodeCtrl]
+      templateUrl: 'views/network/content/network-podcast-list.html',
+      controllerAs: 'networkPodcastList',
+      controller: ['$stateParams', 'PodcastLookup', NetworkPodcastListCtrl]
     };
 
-    function PodcastEpisodeCtrl ($stateParams, PodcastLookup) {
+    function NetworkPodcastListCtrl ($stateParams,PodcastLookup) {
       var vm = this;
 
       vm.podcastsLoading = true;

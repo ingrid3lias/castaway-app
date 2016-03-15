@@ -10,16 +10,16 @@
       bindToController: true,
       templateUrl: 'views/podcasts/content/podcast-review.html',
       controllerAs: 'podcastReview',
-      controller: ['PodcastReviews', PodcastReviewCtrl]
+      controller: ['$stateParams','PodcastReviews', PodcastReviewCtrl]
     };
 
-    function PodcastReviewCtrl (PodcastReviews) {
+    function PodcastReviewCtrl ($stateParams, PodcastReviews) {
       var vm = this;
       
       vm.podcastsLoading = true;
       vm.podcastsLoaded = false;
-      vm.reviews = PodcastReviews.query();
-      vm.reviews.$promise
+      vm.review = PodcastReviews.get({podcast_id: $stateParams.podcast_id});
+      vm.review.$promise
         .then(function () {
           vm.podcastsLoaded = true;
         })
