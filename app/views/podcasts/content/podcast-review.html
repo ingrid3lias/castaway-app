@@ -2,7 +2,7 @@
 <div ng-show="podcastReview.podcastsLoaded">    
   <div 
       class="episode review row" 
-      >
+      ng-repeat="review in podcastReview.review[0]">
     <div class="episode-icon col-md-4">
       <div class="image-overlay">
         <a class="episode-content" href="#">
