@@ -10,20 +10,14 @@
       bindToController: true,
       templateUrl: 'views/podcasts/podcast-index.html',
       controllerAs: 'podcastIndex',
-      controller: ['$stateParams', 'PodcastLookup', 'PodcastReviews', 'PodcastAnnouncements', 'PodcastStations', PodcastIndexCtrl]
+      controller: ['$stateParams', 'PodcastLookup', PodcastIndexCtrl]
     };
 
-    function PodcastIndexCtrl ($stateParams, PodcastLookup, PodcastReviews, PodcastAnnouncements, PodcastStations) {
+    function PodcastIndexCtrl ($stateParams, PodcastLookup) {
       var vm = this;
       
        vm.podcast = PodcastLookup.get({podcast_id: $stateParams.podcast_id});
-      
-      
-      
-       vm.reviews = PodcastReviews.query();
-       vm.annnouncement = PodcastAnnouncements.query();
-       vm.station = PodcastStations.query();
-
+     
     }
   }
 })();

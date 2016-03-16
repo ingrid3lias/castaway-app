@@ -1,21 +1,21 @@
 (function () {
   angular
     .module('app.network')
-    .directive('caNetworkIndex', caNetworkIndex);
+    .directive('caNetworkPodcastList', caNetworkPodcastList);
 
-  function caNetworkIndex () {
+  function caNetworkPodcastList () {
     return {
       restrict: 'E',
       scope: {},
       bindToController: true,
-      templateUrl: 'views/network/network-index.html',
-      controllerAs: 'networkIndex',
-      controller: ['$stateParams', 'PodcastLookup', NetworkIndexCtrl]
+      templateUrl: 'views/network/content/network-podcast-list.html',
+      controllerAs: 'networkPodcastList',
+      controller: ['$stateParams', 'PodcastLookup', NetworkPodcastListCtrl]
     };
 
-    function NetworkIndexCtrl ($stateParams, PodcastLookup) {
+    function NetworkPodcastListCtrl ($stateParams, PodcastLookup) {
       var vm = this;
-      
+
       vm.podcastsLoading = true;
       vm.podcastsLoaded = false;
       vm.podcast = PodcastLookup.get({network_id: $stateParams.network_id});
@@ -26,7 +26,6 @@
         .finally(function () {
           vm.podcastsLoading = false;
         })
-
     }
   }
 })();

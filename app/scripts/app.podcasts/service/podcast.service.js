@@ -5,7 +5,7 @@
     .factory('PodcastLookup', ['$resource', PodcastLookup]);
 
   function PodcastLookup ($resource) {
-    return $resource(  'https://sheetsu.com/apis/3eaa67a7/', {podcast_id: '@podcast_id'},
+    return $resource(  'https://sheetsu.com/apis/3eaa67a7/', {podcast_id: '@podcast_id', network_id: '@network_id'},
       {
         'query': {
           method: 'GET',

@@ -13,7 +13,7 @@
       controller: ['$stateParams', 'PodcastLookup', PodcastEpisodeCtrl]
     };
 
-    function PodcastEpisodeCtrl ($stateParams,PodcastLookup) {
+    function PodcastEpisodeCtrl ($stateParams, PodcastLookup) {
       var vm = this;
 
       vm.podcastsLoading = true;

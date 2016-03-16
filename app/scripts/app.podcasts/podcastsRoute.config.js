@@ -5,11 +5,12 @@
 
   function PodcastsRouteConfig ($stateProvider, $urlRouterProvider, $locationProvider) {
     
+    $urlRouterProvider.when('/podcast/:podcast_id', '/podcast/:podcast_id/index');
+    
     $stateProvider
-      
     // Podcast Index
       .state('podcast.podcastIndex', {
-        url: '/podcast',
+        url: '/podcast/:podcast_id',
         views: {
           'section': {
             templateUrl: 'views/podcasts/index.html',
@@ -24,14 +25,6 @@
       })
       .state('podcast.podcastIndex.index', {
         url: '/index',
-        template: '<ca-podcast-index></ca-podcast-index>'
-      })
-      .state('podcast.podcastIndex.episode', {
-        url: '/episode',
-        template: '<ca-podcast-episode-index></ca-podcast-episode-index>'
-      })
-      .state('podcast.podcastIndex.podcast', {
-        url: '/podcast/:podcast_id',
         template: '<ca-podcast-index></ca-podcast-index>'
       })
       .state('podcast.podcastIndex.station', {

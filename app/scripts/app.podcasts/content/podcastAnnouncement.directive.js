@@ -10,16 +10,22 @@
       bindToController: true,
       templateUrl: 'views/podcasts/content/podcast-announcement.html',
       controllerAs: 'podcastAnnouncement',
-      controller: ['PodcastAnnouncements', PodcastAnnouncementCtrl]
+      controller: ['$stateParams', 'AnnouncementList', PodcastAnnouncementCtrl]
     };
 
-    function PodcastAnnouncementCtrl (PodcastAnnouncements) {
+    function PodcastAnnouncementCtrl ($stateParams, AnnouncementList) {
       var vm = this;
       
+//      // Filter
+//      vm.announcementsFitler = function () {
+//        $stateParams.podcast_id = vm.announcements.podcast_id
+//      }
+      
+      // Load Announcements
       vm.podcastsLoading = true;
       vm.podcastsLoaded = false;
-      vm.announcement = PodcastAnnouncements.query();
-      vm.announcement.$promise
+      vm.announcements = AnnouncementList.get({podcast_id = $stateParams.podcast_id});
+      vm.announcements.$promise
         .then(function () {
           vm.podcastsLoaded = true;
         })

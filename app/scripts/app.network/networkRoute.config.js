@@ -8,7 +8,7 @@
     $stateProvider
 
     // Network Index
-      .state('network.networkIndex', {
+      .state('podcast.networkIndex', {
         url: '/network',
         views: {
           'section': {
@@ -22,25 +22,21 @@
           }
         }
       })
-      .state('network.networkIndex.index', {
-        url: '/index',
+      .state('podcast.networkIndex.index', {
+        url: '/index/:network_id',
         template: '<ca-network-index></ca-network-index>'
       })
-      .state('network.networkIndex.podcast', {
-        url: '/podcast/:podcast_id',
-        template: ''
+      .state('podcast.networkIndex.station', {
+        url: '/station',
+        template: '<ca-network-station-index></ca-network-station-index>'
       })
-      // .state('podcast.podcastIndex.station', {
-      //   url: '/station',
-      //   template: ''
-      // })
-      .state('network.networkIndex.announcement', {
+      .state('podcast.networkIndex.announcement', {
         url: '/announcement',
-        template: ''
+        template: '<ca-network-announcement-index></ca-network-announcement-index>'
       })
-      .state('network.networkIndex.review', {
+      .state('podcast.networkIndex.review', {
         url: '/review',
-        template: ''
+        template: '<ca-network-review-index></ca-network-review-index>'
       })
 
     //end of states

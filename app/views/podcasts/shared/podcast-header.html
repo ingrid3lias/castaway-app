@@ -2,11 +2,11 @@
   <div class="col-md-1 hidden-sm hidden-xs"></div>
   <div class="profile-header col-md-10 col-sm-12 row">
     <div class="col-md-3 profile-avatar">
-      <img class="profile-icon" src="../../../images/podcast-icons/maxfun_avatar.png">
+      <img class="profile-icon" src="{{podcastHeader.podcast[0].podcast_icon}}">
     </div>
     <div class="col-md-9 profile-information">
       <div class="profile-top">  
-        <h3 class="profile-title">The Maximum Fun Network</h3>
+        <h3 class="profile-title">{{podcastHeader.podcast[0].podcast_title}}</h3>
         <div class="profile-rating">
           <i class="fa fa-star"></i>
           <i class="fa fa-star"></i>
@@ -14,8 +14,8 @@
           <i class="fa fa-star"></i>
         </div>
       </div>
-      <h4 class="profile-sub-text">Los Angeles, CA</h4>
-      <h5 class="profile-classification">Comedy</h5>
+      <h4 class="profile-sub-text">{{podcastHeader.podcast[0].podcast_network}}</h4>
+      <h5 class="profile-classification">{{podcastHeader.podcast[0].tag_1}}</h5>
     </div>
   </div>
   <div class="col-md-1 hidden-sm hidden-xs"></div>
