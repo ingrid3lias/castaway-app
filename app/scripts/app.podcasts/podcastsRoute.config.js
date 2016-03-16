@@ -19,7 +19,7 @@
             templateUrl: 'views/podcasts/shared/podcast-navigation.html',
           },
           'header': {
-            templateUrl: 'views/podcasts/shared/podcast-header.html'
+            template: '<ca-podcast-header></ca-podcast-header>'
           }
         }
       })
