@@ -10,13 +10,13 @@
       bindToController: true,
       templateUrl: 'views/marketing/search.html',
       controllerAs: 'searchPage',
-      controller: ['PodcastLookup', SearchPageCtrl]
+      controller: ['$scope', 'PodcastLookup', SearchPageCtrl]
     };
 
-    function SearchPageCtrl (PodcastLookup) {
+    function SearchPageCtrl ($scope, PodcastLookup) {
       var vm = this;
-      
-      // Podcast Data
+
+      // // Podcast Data
       vm.podcastsLoading = true;
       vm.podcastsLoaded = false;
       vm.podcasts = PodcastLookup.query();
@@ -27,9 +27,7 @@
         .finally(function () {
           vm.podcastsLoading = false;
         })
-      
-      //Typeahead
-      
+
     }
   }
 })();

@@ -4,9 +4,9 @@
     .config(['$stateProvider', '$urlRouterProvider', '$locationProvider', NetworkRouteConfig]);
 
   function NetworkRouteConfig ($stateProvider, $urlRouterProvider, $locationProvider) {
-    
+
     $stateProvider
-      
+
     // Network Index
       .state('podcast.networkIndex', {
         url: '/network',
@@ -38,7 +38,7 @@
         url: '/review',
         template: '<ca-network-review-index></ca-network-review-index>'
       })
-    
+
     //end of states
   }
 })();

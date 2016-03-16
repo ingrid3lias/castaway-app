@@ -13,11 +13,10 @@
     </div>
     <div class="col-md-6 col-sm-12 search-section">
       <div class="search search-page-bar">
-        <input 
-               type="search" 
-               class="form-control search-bar" placeholder="Search" 
-               ng-model="podcastLookup">
-        
+        <input
+         type="search"
+         class="form-control search-bar" placeholder="Search"
+         ng-model="podcastLookup">
         <button type="submit"><a href="#"><i class="fa fa-search"></i></a></button>
       </div>
     </div>
@@ -27,14 +26,10 @@
   <!-- MAIN CONTENT -->
   <div class="search-main row">
     <!-- RESULTS -->
-    
     <loading-indicator loading-indicator-model="searchPage.podcastsLoading"></loading-indicator>
-    
-    <div 
+    <div
       class="search-results"
       ng-show="searchPage.podcastsLoaded">
-
-<!--        <div ng-repeat="podcast in searchPage.podcasts.result | filter: podcastLookup | filter:{podcast:true}">-->
       <ul>
         <li ng-repeat="podcast in searchPage.podcasts.result | filter: podcastLookup">
           <div class="col-md-3 col-sm-6 col-xs-12">
@@ -50,13 +45,12 @@
                 <h6 class="item-creator">{{podcast.podcast_network}}</h6>
               </a>
           </div>
-        </li> 
+        </li>
       </ul>
       <div ng-if="!(searchPage.podcasts.result | filter:podcastLookup).length">
         <h5>No Results</h5>
       </div>
     </div>
-    
-    
+  </div>
 </div>
 <div class="col-md-1"></div>
