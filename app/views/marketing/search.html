@@ -43,7 +43,7 @@
                 <img class="podcast-avatar" src="{{podcast.podcast_icon}}">
               </a>
             </div>
-              <a ui-sref="podcast.podcastIndex.index({podcast_id: podcast.podcast_id})">
+              <a ui-sref="podcast.podcastIndex({podcast_id: podcast.podcast_id})">
                 <h5 class="item-title">{{podcast.podcast_title}}</h5>
               </a>
               <a ui-sref="podcast.networkIndex.index({network_id:podcast.network_id})">
