@@ -18,7 +18,7 @@
       
       vm.podcastsLoading = true;
       vm.podcastsLoaded = false;
-      vm.reviews = PodcastReviews.get({podcast_id = $stateParams.podcast_id});
+      vm.reviews = PodcastReviews.query();
       vm.reviews.$promise
         .then(function () {
           vm.podcastsLoaded = true;

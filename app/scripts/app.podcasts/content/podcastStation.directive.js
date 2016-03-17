@@ -18,8 +18,8 @@
       
       vm.podcastsLoading = true;
       vm.podcastsLoaded = false;
-      vm.station = PodcastStations.get({podcast_id: $stateParams.podcast_id});
-      vm.station.$promise
+      vm.stations = PodcastStations.query();
+      vm.stations.$promise
         .then(function () {
           vm.podcastsLoaded = true;
         })

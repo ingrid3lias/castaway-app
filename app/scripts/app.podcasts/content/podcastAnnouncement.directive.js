@@ -24,7 +24,7 @@
       // Load Announcements
       vm.podcastsLoading = true;
       vm.podcastsLoaded = false;
-      vm.announcements = AnnouncementList.get({podcast_id = $stateParams.podcast_id});
+      vm.announcements = AnnouncementList.query();
       vm.announcements.$promise
         .then(function () {
           vm.podcastsLoaded = true;
