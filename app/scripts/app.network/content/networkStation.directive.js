@@ -10,16 +10,16 @@
       bindToController: true,
       templateUrl: 'views/network/content/network-station.html',
       controllerAs: 'networkStation',
-      controller: ['PodcastStations', NetworkStationCtrl]
+      controller: ['$stateParams', 'PodcastStations', NetworkStationCtrl]
     };
 
-    function NetworkStationCtrl (PodcastStations) {
+    function NetworkStationCtrl ($stateParams, PodcastStations) {
       var vm = this;
       
       vm.podcastsLoading = true;
       vm.podcastsLoaded = false;
-      vm.station = PodcastStations.query();
-      vm.station.$promise
+      vm.stations = PodcastStations.query();
+      vm.stations.$promise
         .then(function () {
           vm.podcastsLoaded = true;
         })

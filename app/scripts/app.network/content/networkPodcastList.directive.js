@@ -18,7 +18,7 @@
 
       vm.podcastsLoading = true;
       vm.podcastsLoaded = false;
-      vm.podcast = PodcastLookup.get({network_id: $stateParams.network_id});
+      vm.podcast = PodcastLookup.query();
       vm.podcast.$promise
         .then(function () {
           vm.podcastsLoaded = true;

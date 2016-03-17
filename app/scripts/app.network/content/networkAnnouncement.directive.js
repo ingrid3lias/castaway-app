@@ -10,10 +10,10 @@
       bindToController: true,
       templateUrl: 'views/network/content/network-announcement.html',
       controllerAs: 'networkAnnouncement',
-      controller: ['AnnouncementList', NetworkAnnouncementCtrl]
+      controller: ['$stateParams', 'AnnouncementList', NetworkAnnouncementCtrl]
     };
 
-    function NetworkAnnouncementCtrl (AnnouncementList) {
+    function NetworkAnnouncementCtrl ($stateParams, AnnouncementList) {
       var vm = this;
       
       vm.podcastsLoading = true;

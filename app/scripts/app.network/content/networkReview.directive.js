@@ -10,10 +10,10 @@
       bindToController: true,
       templateUrl: 'views/network/content/network-review.html',
       controllerAs: 'networkReview',
-      controller: ['PodcastReviews', NetworkReviewCtrl]
+      controller: ['$stateParams', 'PodcastReviews', NetworkReviewCtrl]
     };
 
-    function NetworkReviewCtrl (PodcastReviews) {
+    function NetworkReviewCtrl ($stateParams, PodcastReviews) {
       var vm = this;
       
       vm.podcastsLoading = true;

@@ -1,8 +1,8 @@
-<loading-indicator loading-indicator-model="podcastStation.podcastsLoading"></loading-indicator>
-<div ng-show="podcastStation.podcastsLoaded">    
+<loading-indicator loading-indicator-model="networkStation.podcastsLoading"></loading-indicator>
+<div ng-show="networkStation.podcastsLoaded">    
   <div 
       class="episode row"
-      ng-repeat="station in podcastStation.station.result">
+      ng-repeat="station in networkStation.stations.result">
     <div class="episode-icon col-md-4">
       <div class="image-overlay">
         <a class="episode-content" href="/#/episode/index">
