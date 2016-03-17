@@ -29,17 +29,45 @@
 
 //////// PODCAST ////////
 
+//.profile-header-image {
+//  background: -moz-linear-gradient(top, rgba(63,86,102,.8) 0%, //rgba(63,86,102,.4) 59%, rgba(255,255,255,.2) 100%), //url("../images/maxfun_banner.jpg") no-repeat center; 
+//  background: -webkit-gradient(linear, left top, left bottom, //color-stop(0%,rgba(63,86,102,.8)), color-//stop(59%,rgba(63,86,102,.4)), color-//stop(100%,rgba(255,255,255,.2))), //url("../images/maxfun_banner.jpg") no-repeat center; 
+ // background: -webkit-linear-gradient(top, rgba(63,86,102,.8) //0%,rgba(63,86,102,.4) 59%,rgba(255,255,255,.2) 100%), //url("../images/maxfun_banner.jpg") no-repeat center; 
+ // background: -o-linear-gradient(top, rgba(63,86,102,.8) //0%,rgba(63,86,102,.4) 59%,rgba(255,255,255,.2) 100%), //url("../images/maxfun_banner.jpg") no-repeat center; 
+ // background: -ms-linear-gradient(top, rgba(63,86,102,.8) //0%,rgba(63,86,102,.4) 59%,rgba(255,255,255,.2) 100%), //url("../images/maxfun_banner.jpg") no-repeat center; 
+ // background: linear-gradient(to bottom, rgba(63,86,102,.8) //0%,rgba(63,86,102,.4) 59%,rgba(255,255,255,.2) 100%), //url("../images/maxfun_banner.jpg") no-repeat center;
+ // -webkit-background-size: cover;    
+ // -moz-background-size: cover;
+ // background-size: cover;
+ // height: 350px;
+//}
+
 .profile-header-image {
-  background: -moz-linear-gradient(top, rgba(63,86,102,.8) 0%, rgba(63,86,102,.4) 59%, rgba(255,255,255,.2) 100%), url("../images/maxfun_banner.jpg") no-repeat center; 
-  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(63,86,102,.8)), color-stop(59%,rgba(63,86,102,.4)), color-stop(100%,rgba(255,255,255,.2))), url("../images/maxfun_banner.jpg") no-repeat center; 
-  background: -webkit-linear-gradient(top, rgba(63,86,102,.8) 0%,rgba(63,86,102,.4) 59%,rgba(255,255,255,.2) 100%), url("../images/maxfun_banner.jpg") no-repeat center; 
-  background: -o-linear-gradient(top, rgba(63,86,102,.8) 0%,rgba(63,86,102,.4) 59%,rgba(255,255,255,.2) 100%), url("../images/maxfun_banner.jpg") no-repeat center; 
-  background: -ms-linear-gradient(top, rgba(63,86,102,.8) 0%,rgba(63,86,102,.4) 59%,rgba(255,255,255,.2) 100%), url("../images/maxfun_banner.jpg") no-repeat center; 
-  background: linear-gradient(to bottom, rgba(63,86,102,.8) 0%,rgba(63,86,102,.4) 59%,rgba(255,255,255,.2) 100%), url("../images/maxfun_banner.jpg") no-repeat center;
-  -webkit-background-size: cover;    
-  -moz-background-size: cover;
-  background-size: cover;
+  background: -moz-linear-gradient(top, rgba(63,86,102,.8) 0%, rgba(63,86,102,.4) 70%, rgba(255,255,255,.2) 100%); 
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(63,86,102,.8)), color-stop(59%,rgba(63,86,102,.4)), color-stop(100%,rgba(255,255,255,.2))); 
+  background: -webkit-linear-gradient(top, rgba(63,86,102,.9) 0%,rgba(63,86,102,.5) 70%,rgba(255,255,255,.2) 100%); 
+  background: -o-linear-gradient(top, rgba(63,86,102,.9) 0%,rgba(63,86,102,.5) 70%,rgba(255,255,255,.2) 100%); 
+  background: -ms-linear-gradient(top, rgba(63,86,102,.9) 0%,rgba(63,86,102,.5) 70%,rgba(255,255,255,.2) 100%); 
+  background: linear-gradient(to bottom, rgba(63,86,102,.9) 0%,rgba(63,86,102,.5) 70%,rgba(255,255,255,.2) 100%);
   height: 350px;
+  position: relative;
+  overflow: hidden;
+}
+
+.image-container {
+  position: absolute;
+  top: -100px;
+  right: 0;
+  left: 0;
+  z-index: -1;
+}
+
+.header-background {
+  -webkit-filter: blur(5px);
+  -moz-filter: blur(5px);
+  -o-filter: blur(5px);
+  -ms-filter: blur(5px);
+  filter: blur(5px);
 }
 
 .profile-information {
