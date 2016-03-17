@@ -5,11 +5,12 @@
 
   function NetworkRouteConfig ($stateProvider, $urlRouterProvider, $locationProvider) {
 
+    $urlRouterProvider.when('/network/:network_id', '/network/:network_id/index');
+    
     $stateProvider
-
     // Network Index
       .state('podcast.networkIndex', {
-        url: '/network',
+        url: '/network/:network_id',
         views: {
           'section': {
             templateUrl: 'views/network/index.html',
@@ -18,12 +19,12 @@
             templateUrl: 'views/network/shared/network-navigation.html',
           },
           'header': {
-            templateUrl: 'views/network/shared/network-header.html'
+            template: '<ca-network-header></ca-network-header>'
           }
         }
       })
       .state('podcast.networkIndex.index', {
-        url: '/index/:network_id',
+        url: '/index',
         template: '<ca-network-index></ca-network-index>'
       })
       .state('podcast.networkIndex.station', {
