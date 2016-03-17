@@ -1,12 +1,16 @@
 <loading-indicator loading-indicator-model="podcastAnnouncement.podcastsLoading"></loading-indicator>
-<div ng-show="podcastAnnouncement.podcastsLoaded">    
-  <div 
-      class="episode review row"
-      ng-repeat="announcement in podcastAnnouncement.announcements.result">
+<div
+  ng-show="podcastAnnouncement.podcastsLoaded">
+  <div
+    class="episode review row"
+    ng-if="podcastAnnouncement.announcements.length"
+    ng-repeat="announcement in podcastAnnouncement.announcements">
     <div class="episode-icon col-md-4">
       <div class="image-overlay">
         <a class="episode-content" href="#">
-          <img class="podcast-avatar" src="{{announcement.network_icon}}">
+          <img
+            class="podcast-avatar"
+            ng-src="{{announcement.network_icon}}" />
         </a>
       </div>
     </div>
@@ -28,4 +32,9 @@
       </div>
     </div>
   </div>
+</div>
+<div
+  ng-show="podcastAnnouncement.podcastsLoaded"
+  ng-if="!podcastAnnouncement.announcements.length">
+  <p>No Annoucements</p>
 </div>
