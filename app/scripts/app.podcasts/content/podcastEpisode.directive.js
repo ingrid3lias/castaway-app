@@ -10,16 +10,16 @@
       bindToController: true,
       templateUrl: 'views/podcasts/content/podcast-episode.html',
       controllerAs: 'podcastEpisode',
-      controller: ['$stateParams', 'PodcastLookup', PodcastEpisodeCtrl]
+      controller: ['$stateParams', 'EpisodeLookup', PodcastEpisodeCtrl]
     };
 
-    function PodcastEpisodeCtrl ($stateParams, PodcastLookup) {
+    function PodcastEpisodeCtrl ($stateParams, EpisodeLookup) {
       var vm = this;
 
       vm.podcastsLoading = true;
       vm.podcastsLoaded = false;
-      vm.podcast = PodcastLookup.get({podcast_id: $stateParams.podcast_id});
-      vm.podcast.$promise
+      vm.episodes = EpisodeLookup.get({podcast_id: $stateParams.podcast_id});
+      vm.episodes.$promise
         .then(function () {
           vm.podcastsLoaded = true;
         })
