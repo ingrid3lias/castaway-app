@@ -56,18 +56,24 @@
 
 .image-container {
   position: absolute;
-  top: -100px;
+  top: -20px;
   right: 0;
   left: 0;
   z-index: -1;
+  background-color: #333333;
 }
 
 .header-background {
+  width: 100%;
   -webkit-filter: blur(5px);
   -moz-filter: blur(5px);
   -o-filter: blur(5px);
   -ms-filter: blur(5px);
   filter: blur(5px);
+}
+
+img.header-background {
+  
 }
 
 .profile-information {
