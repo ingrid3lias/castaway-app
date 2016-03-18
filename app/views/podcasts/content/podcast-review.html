@@ -1,8 +1,9 @@
 <loading-indicator loading-indicator-model="podcastReview.podcastsLoading"></loading-indicator>
 <div ng-show="podcastReview.podcastsLoaded">    
   <div 
-      class="episode review row" 
-      ng-repeat="review in podcastReview.reviews.result">
+      class="episode review row"
+      ng-if="podcastReview.reviews.length"
+      ng-repeat="review in podcastReview.reviews">
     <div class="episode-icon col-md-4">
       <div class="image-overlay">
         <a class="episode-content" href="#">
@@ -29,3 +30,8 @@
     </div>
   </div>
 </div>
+<div
+    ng-show="podcastReview.podcastsLoaded"
+    ng-if="!podcastReview.reviews.length">
+  <h5>No Reviews</h5>
+ </div>
