@@ -1,9 +1,11 @@
 <loading-indicator loading-indicator-model="networkPodcastList.podcastsLoading"></loading-indicator>
-<div ng-show="networkPodcastList.podcastsLoaded">
+<div 
+    ng-show="networkPodcastList.podcastsLoaded">
   <div>
     <div 
          class="episode row"
-         ng-repeat="podcast in networkPodcastList.podcast.result">
+         ng-if="networkPodcastList.podcasts.length"
+         ng-repeat="podcast in networkPodcastList.podcasts">
       <div class="episode-icon col-md-4">
         <div class="image-overlay">
           <a class="episode-content" href="#">
@@ -39,4 +41,9 @@
       </div>
     </div>
   </div>
+</div>
+<div
+    ng-show="networkPodcastList.podcastsLoaded"
+    ng-if="!networkPodcastList.announcements.length">
+  <h5>No Podcasts</h5>
 </div>

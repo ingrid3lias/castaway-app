@@ -10,16 +10,16 @@
       bindToController: true,
       templateUrl: 'views/network/content/network-podcast-list.html',
       controllerAs: 'networkPodcastList',
-      controller: ['$stateParams', 'PodcastLookup', NetworkPodcastListCtrl]
+      controller: ['$stateParams', 'PodcastList', NetworkPodcastListCtrl]
     };
 
-    function NetworkPodcastListCtrl ($stateParams, PodcastLookup) {
+    function NetworkPodcastListCtrl ($stateParams, PodcastList) {
       var vm = this;
 
       vm.podcastsLoading = true;
       vm.podcastsLoaded = false;
-      vm.podcast = PodcastLookup.query();
-      vm.podcast.$promise
+      vm.podcasts = PodcastList.get({network_id: $stateParams.network_id});
+      vm.podcasts.$promise
         .then(function () {
           vm.podcastsLoaded = true;
         })
