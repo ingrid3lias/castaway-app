@@ -2,7 +2,8 @@
 <div ng-show="networkReview.podcastsLoaded">    
   <div 
       class="episode review row" 
-      ng-repeat="review in networkReview.reviews.result">
+      ng-if="networkReview.reviews.length"
+      ng-repeat="review in networkReview.reviews">
     <div class="episode-icon col-md-4">
       <div class="image-overlay">
         <a class="episode-content" href="#">
@@ -28,4 +29,9 @@
       </div>
     </div>
   </div>
+</div>
+<div
+    ng-show="networkReview.podcastsLoaded"
+    ng-if="!networkReview.reviews.length">
+  <h5>No Reviews have been written yet!</h5>
 </div>

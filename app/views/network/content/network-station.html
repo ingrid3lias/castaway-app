@@ -2,7 +2,8 @@
 <div ng-show="networkStation.podcastsLoaded">    
   <div 
       class="episode row"
-      ng-repeat="station in networkStation.stations.result">
+      ng-if="networkStation.stations.length"
+      ng-repeat="station in networkStation.stations">
     <div class="episode-icon col-md-4">
       <div class="image-overlay">
         <a class="episode-content" href="/#/episode/index">
@@ -39,4 +40,9 @@
       </div>
     </div>
   </div>
+</div>
+<div
+    ng-show="networkStation.podcastsLoaded"
+    ng-if="!networkStation.stations.length">
+  <h5>No Annoucements</h5>
 </div>

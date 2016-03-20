@@ -18,7 +18,7 @@
       
       vm.podcastsLoading = true;
       vm.podcastsLoaded = false;
-      vm.reviews = PodcastReviews.query();
+      vm.reviews = PodcastReviews.getNetwork({network_id: $stateParams.network_id});
       vm.reviews.$promise
         .then(function () {
           vm.podcastsLoaded = true;

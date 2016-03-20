@@ -18,7 +18,7 @@
       
       vm.podcastsLoading = true;
       vm.podcastsLoaded = false;
-      vm.stations = PodcastStations.query();
+      vm.stations = PodcastStations.getNetwork({network_id: $stateParams.network_id});
       vm.stations.$promise
         .then(function () {
           vm.podcastsLoaded = true;

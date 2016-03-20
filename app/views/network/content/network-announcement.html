@@ -2,8 +2,9 @@
 <div 
     ng-show="networkAnnouncement.podcastsLoaded">    
   <div 
-      class="episode review row" 
-      ng-repeat="announcement in networkAnnouncement.announcement.result">
+      class="episode review row"
+      ng-if="networkAnnouncement.announcement.length"
+      ng-repeat="announcement in networkAnnouncement.announcement">
     <div class="episode-icon col-md-4">
       <div class="image-overlay">
         <a class="episode-content" href="#">
@@ -29,4 +30,9 @@
       </div>
     </div>
   </div>
+</div>
+<div
+    ng-show="networkAnnouncement.podcastsLoaded"
+    ng-if="!networkAnnouncement.announcement.length">
+  <h5>No Annoucements</h5>
 </div>
