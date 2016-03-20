@@ -24,7 +24,8 @@
     'app.podcasts',
     'app.network',
     'app.user',
-    'app.auth'
+    'app.auth',
+    'angulike'
   ]);
 })();
 
