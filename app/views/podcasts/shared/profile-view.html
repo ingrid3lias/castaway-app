@@ -1,0 +1,52 @@
+<div class="content-container row">
+  <!-- MAIN CONTENT -->
+  <div class="col-md-12"> 
+    <!-- CONTENT BASED ON VIEW -->
+    <div class="profile-main row">
+      <div class="main-content col-md-7 col-sm-12">
+        <div ng-transclude></div>
+      </div>
+      
+      <div class="profile-summary col-md-5 cold-sm-12">
+      <!-- STATISTICS BASED ON PROFILE -->
+        <div class="profile-stats">
+          <div class="stat-box">
+            <h3 class="stat-number">{{profileView.podcast[0].followers}}</h3>
+            <h5 class="stat-title">Followers</h5>
+          </div>
+          <div class="stat-box middle-box">
+            <h3 class="stat-number">{{profileView.podcast[0].episode_number}}</h3>
+            <h5 class="stat-title">Episodes</h5>
+          </div>
+          <div class="stat-box">
+            <h3 class="stat-number">{{profileView.podcast[0].likes}}</h3>
+            <h5 class="stat-title">Likes</h5>
+          </div>
+        </div>
+        <!-- BIO BASED ON PROFILE -->
+        <div class="profile-bio">
+          <h4 class="bio-title">Get to know {{profileView.podcast[0].podcast_title}}!</h4>
+          <h5 class="bio-text">{{profileView.podcast[0].podcast_description}}</h5>
+          <h5 class="homepage"><span class="info-emphasis">Homepage:</span> <a href="{{profileView.podcast[0].podcast_hp}}">{{profileView.podcast[0].display_name}}</a></h5>
+          <h5 class="schedule"><span class="info-emphasis">Uploaded:</span> {{profileView.podcast[0].podcast_schedule}}</h5>
+        </div>
+        <div class="social-media-links">
+          <a href="{{profileView.podcast[0].podcast_fb}}" target="_blank"><i class="fa fa-facebook-square"></i></a>
+          <a href="{{profileView.podcast[0].podcast_twitter}}" target="_blank"><i class="fa fa-twitter-square"></i></a>
+        </div>
+        <!-- RECOMMENDED CONTENT -->
+      
+        <div class="recommendations">
+          <div class="rec-title">
+            <h4>Recommendations</h4>  
+          </div>
+          <div class="rec-profiles row">
+            <ca-recommendation-item></ca-recommendation-item>
+          </div>
+        </div>
+        
+      </div>
+      
+    </div>
+  </div>
+</div>

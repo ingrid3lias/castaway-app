@@ -20,6 +20,9 @@
           },
           'header': {
             template: '<ca-podcast-header></ca-podcast-header>'
+          },
+          'profile': {
+            template: '<ca-profile-view></ca-profile-view>'
           }
         }
       })
