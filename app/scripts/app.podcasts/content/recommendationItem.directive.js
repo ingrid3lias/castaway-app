@@ -10,7 +10,7 @@
       bindToController: true,
       templateUrl: 'views/podcasts/content/recommendation-item.html',
       controllerAs: 'recommendationItem',
-      controller: ['$stateParams', 'EpisodeLookup', RecommendationItemCtrl]
+      controller: ['$stateParams', 'PodcastLookup', RecommendationItemCtrl]
     };
 
     function RecommendationItemCtrl ($stateParams, PodcastLookup) {
@@ -18,7 +18,7 @@
 
       vm.podcastsLoading = true;
       vm.podcastsLoaded = false;
-      vm.recs = PodcastLookup.get({rec_id: $stateParams.rec_id});
+      vm.recs = PodcastLookup.getRecommendations({rec_id: $stateParams.rec_id});
       vm.recs.$promise
         .then(function () {
           vm.podcastsLoaded = true;
