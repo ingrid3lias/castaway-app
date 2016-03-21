@@ -1,8 +1,11 @@
-<div class="col-md-6 rec-box">
+<loading-indicator loading-indicator-model="recommendationItem.podcastsLoading"></loading-indicator>
+<div 
+    class="col-md-6 rec-box"
+    ng-show="recommendationItem.podcastsLoaded">
   <div 
       class="center-rec"
-      ng-if="podcastRecommendations.recs.length"
-      ng-repeat="rec in podcastRecommendations.recs"> 
+      ng-if="recommendationItem.recs.length"
+      ng-repeat="rec in recommendationItem.recs"> 
     <div class="image-overlay">
       <a href="#">
         <img class="podcast-avatar" src="{{rec.podcast_icon}}">
@@ -13,7 +16,7 @@
   </div> 
 </div>
 <div
-    ng-show="podcastRecommendations.podcastsLoaded"
-    ng-if="!podcastRecommendations.recs.length">
+    ng-show="recommendationItem.podcastsLoaded"
+    ng-if="!recommendationItem.recs.length">
   <h5>No Recommendations</h5>
- </div>
+</div>
