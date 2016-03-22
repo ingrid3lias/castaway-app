@@ -14,7 +14,10 @@
           <i class="fa fa-star"></i>
         </div>
       </div>
-      <h4 class="profile-sub-text">{{podcastHeader.podcast[0].podcast_network}}</h4>
+      <h4 class="profile-sub-text">
+        <a ui-sref="podcast.networkIndex({network_id: podcastHeader.podcast[0].network_id})">
+        {{podcastHeader.podcast[0].podcast_network}}</a>
+      </h4>
       <h5 class="profile-classification">{{podcastHeader.podcast[0].tag_1}}</h5>
     </div>
   </div>

@@ -12,14 +12,17 @@
       .state('podcast.networkIndex', {
         url: '/network/:network_id',
         views: {
-          'section': {
-            templateUrl: 'views/network/index.html',
-          },
           'navigation': {
             templateUrl: 'views/network/shared/network-navigation.html',
           },
           'header': {
             template: '<ca-network-header></ca-network-header>'
+          },
+          'profile': {
+            templateUrl: 'views/network/index.html',
+          },
+          'sidebar': {
+            template: '<ca-network-sidebar></ca-network-sidebar>'
           }
         }
       })

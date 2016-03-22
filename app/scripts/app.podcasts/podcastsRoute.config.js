@@ -12,17 +12,17 @@
       .state('podcast.podcastIndex', {
         url: '/podcast/:podcast_id',
         views: {
-          'section': {
-            templateUrl: 'views/podcasts/index.html',
-          },
           'navigation': {
             templateUrl: 'views/podcasts/shared/podcast-navigation.html',
           },
           'header': {
             template: '<ca-podcast-header></ca-podcast-header>'
           },
+          'sidebar': {
+            template: '<ca-podcast-sidebar></ca-podcast-sidebar>'
+          },
           'profile': {
-            template: '<ca-profile-view></ca-profile-view>'
+            templateUrl: 'views/podcasts/index.html'
           }
         }
       })

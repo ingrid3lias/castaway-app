@@ -6,11 +6,15 @@
   role="navigation"
   class="page__navigation"
   ui-view="navigation"></div>
-<div
-  role="profile"
-  class="page__profile"
-  ui-view="profile"></div>
-<section
-  role="region"
-  class="page__section"
-  ui-view="section"></section>
+<section class="container">
+  <div class="content-container row">
+    <div
+      role="profile"
+      class="main-content col-md-7 col-sm-12"
+      ui-view="profile"></div>
+    <aside
+      role="sidebar"
+      class="col-md-5 col-sm-12"
+      ui-view="sidebar"></aside>
+  </div>
+</section>

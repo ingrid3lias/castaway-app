@@ -50,7 +50,8 @@
       $scope.podcastData = {
         displayKey: 'podcast_title',
         source: podcastLookup.ttAdapter(),
-        limit: 15
+        limit: 15,
+        template: '<a ui-sref="#">title</a>'
       };
 
 
