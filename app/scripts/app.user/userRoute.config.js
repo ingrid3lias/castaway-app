@@ -5,21 +5,24 @@
 
   function UserRouteConfig ($stateProvider, $urlRouterProvider, $locationProvider) {
 
-    //$urlRouterProvider.when('/user', '/user/collection');
+    $urlRouterProvider.when('/user/:user_id', '/user/:user_id/index');
     
     $stateProvider
       //User Index
       .state('podcast.userIndex', {
-        url: '/user',
+        url: '/user/:user_id',
         views: {
-          'section': {
-            templateUrl: 'views/user/index.html',
-          },
           'navigation': {
             templateUrl: 'views/user/shared/user-navigation.html',
           },
           'header': {
-            templateUrl: 'views/user/shared/user-header.html'
+            template: '<ca-user-header></ca-user-header>'
+          },
+          'content': {
+            templateUrl: 'views/user/index.html',
+          },
+          'sidebar': {
+            template: '<ca-user-sidebar></ca-user-sidebar>'
           }
         }
       })

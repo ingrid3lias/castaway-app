@@ -21,7 +21,7 @@
           'sidebar': {
             template: '<ca-podcast-sidebar></ca-podcast-sidebar>'
           },
-          'profile': {
+          'content': {
             templateUrl: 'views/podcasts/index.html'
           }
         }

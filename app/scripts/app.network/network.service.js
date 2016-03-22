@@ -5,7 +5,7 @@
     .factory('NetworkLookup', ['$resource', NetworkLookup]);
 
   function NetworkLookup ($resource) {
-    return $resource(  'https://sheetsu.com/apis/3ec99887', {network_id: '@network_id'},
+    return $resource(  'https://sheetsu.com/apis/3ec99887', {network_id: '@id'},
       {
         'query': {
           method: 'GET',
@@ -15,7 +15,7 @@
           method: 'GET',
           url: 'https://sheetsu.com/apis/v1.0/3ec99887/network_id/:network_id',
           isArray: true
-        }
+        },
       }
     );
   };

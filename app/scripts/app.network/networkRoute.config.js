@@ -18,7 +18,7 @@
           'header': {
             template: '<ca-network-header></ca-network-header>'
           },
-          'profile': {
+          'content': {
             templateUrl: 'views/network/index.html',
           },
           'sidebar': {

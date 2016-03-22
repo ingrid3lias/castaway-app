@@ -2,15 +2,20 @@
   <div class="col-md-1 hidden-sm hidden-xs"></div>
   <div class="profile-header col-md-10 col-sm-12 row">
     <div class="col-md-3 profile-avatar">
-      <img class="profile-icon" src="{{.user_icon}}">
+      <img class="profile-icon" src="{{userHeader.user[0].user_icon}}">
     </div>
     <div class="col-md-9 profile-information">
       <div class="profile-top">  
-        <h3 class="profile-title">{{.user_name}}</h3>
+        <h3 class="profile-title">{{userHeader.user[0].user_name}}</h3>
       </div>
-      <h4 class="profile-sub-text">{{.user_tagline}}</h4>
-      <h5 class="profile-classification">Joined: {{.user_joined}}</h5>
+      <h4 class="profile-sub-text">{{userHeader.user[0].user_tagline}}</h4>
+      <h5 class="profile-classification">Joined: {{userHeader.user[0].user_joined}}</h5>
     </div>
   </div>
   <div class="col-md-1 hidden-sm hidden-xs"></div>
+  <div class="image-container">
+    <img 
+        class="header-background" 
+        ng-src="{{userHeader.user[0].user_banner}}">
+  </div>
 </header>
