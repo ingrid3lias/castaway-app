@@ -1,0 +1,48 @@
+<loading-indicator loading-indicator-model="userStation.podcastsLoading"></loading-indicator>
+<div ng-show="userStation.podcastsLoaded">    
+  <div 
+      class="episode row"
+      ng-if="userStation.stations.length"
+      ng-repeat="station in userStation.stations">
+    <div class="episode-icon col-md-4">
+      <div class="image-overlay">
+        <a class="episode-content" href="/#/episode/index">
+          <img class="podcast-avatar" src="{{station.station_icon}}">
+        </a>
+      </div>
+    </div>
+    <div class="episode-info col-md-8">
+      <div class="episode-top-info">
+        <a href="/#/user/index"><h4 class="podcast-title">{{station.station_title}}</h4></a>
+        <div class="date-info">
+          <h6 class="episode-date">{{station.station_date}}</h6>
+        </div>
+      </div>
+      <a href="/#/user/index"><h6 class="episode-title">{{station.station_creator}}</h6></a>
+      <div class="seek-control">
+        <div class="current-time">0:00</div>
+        <div class="total-time">{{station.station_length}}</div>
+        <div class="seek-bar">
+          <div class="fill-bar"></div>
+          <div class="thumb-bar"></div>
+        </div>
+      </div> 
+      <div class="episode-info-bottom">
+        <div class="interactive-icons">
+          <a href="#"><i class="fa fa-gittip"></i></a>
+          <a href="#"><i class="fa fa-share-square"></i></a>
+          <a href="#"><i class="fa fa-plus-circle"></i></a>
+        </div>
+        <div class="episode-tags">
+          <a href="/#/search"><button class="tag"><p>#{{station.tag_1}}</p></button></a>
+          <a href="/#/search"><button class="tag"><p>#{{station.tag_2}}</p></button></a>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<div
+    ng-show="userStation.podcastsLoaded"
+    ng-if="!userStation.stations.length">
+  <h5>No Stations have been uploaded yet!</h5>
+ </div>

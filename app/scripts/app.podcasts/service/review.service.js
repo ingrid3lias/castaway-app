@@ -5,7 +5,7 @@
     .factory('PodcastReviews', ['$resource', PodcastReviews]);
 
   function PodcastReviews ($resource) {
-    return $resource(  'https://sheetsu.com/apis/80fdd08d', {podcast_id: '@id', network_id: '@id'},
+    return $resource(  'https://sheetsu.com/apis/80fdd08d', {podcast_id: '@id', network_id: '@id', user_id: '@id'},
       {
         'query': {
           method: 'GET',

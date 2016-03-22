@@ -32,7 +32,7 @@
       })
       .state('podcast.userIndex.station', {
         url: '/station',
-        template: ''
+        template: '<ca-user-station-index></ca-user-station-index>'
       }) 
       .state('podcast.userIndex.following', {
         url: '/following',
