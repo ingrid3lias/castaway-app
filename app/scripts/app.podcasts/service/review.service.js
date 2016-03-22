@@ -21,6 +21,11 @@
           url: 'https://sheetsu.com/apis/v1.0/80fdd08d/network_id/:network_id',
           isArray: true
         },
+        'getUser': {
+          method: 'GET',
+          url: 'https://sheetsu.com/apis/v1.0/80fdd08d/user_id/:user_id',
+          isArray: true
+        },
       }
     );
   };

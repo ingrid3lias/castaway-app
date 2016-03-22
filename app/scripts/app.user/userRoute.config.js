@@ -32,15 +32,15 @@
       })
       .state('podcast.userIndex.station', {
         url: '/station',
-        template: '<ca-user-stations></ca-user-stations>'
+        template: ''
       }) 
       .state('podcast.userIndex.following', {
         url: '/following',
-        template: '<ca-user-following></ca-user-following>'
+        template: ''
       })
       .state('podcast.userIndex.review', {
         url: '/review',
-        template: '<ca-user-review></ca-user-review>'
+        template: '<ca-user-review-index></ca-user-review-index>'
       })
      
       //User Collection
