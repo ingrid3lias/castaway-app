@@ -18,7 +18,7 @@
           <a ui-sref="podcast.podcastIndex({podcast_id: podcast.podcast_id})"><h4 class="podcast-title">{{episode.podcast_title}}</h4></a>
           <div class="date-info"><h6 class="episode-date">{{episode.upload_date}}</h6></div>
         </div>
-        <a ui-sref="podcast.episodeIndex({episode_id: episode.episode_id})"><h6 class="episode-title">{{episode.episode_title}}</h6></a>
+        <a ui-sref="podcast.podcastIndex.episodeIndex({episode_id: episode.episode_id})"><h6 class="episode-title">{{episode.episode_title}}</h6></a>
         <div class="seek-control">
           <div class="current-time">0:00</div>
           <div class="total-time">{{episode.episode_length}}</div>

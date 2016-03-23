@@ -14,12 +14,12 @@
         <a
           class="btn btn-default sign-in"
           role="button"
-          ng-click="modalCtrl.toggleModal($event)">Sign In</a></li>
+          modal-control modal-id="signIn" modal-event="open">Sign In</a></li>
       <li>
         <a
           class="btn btn-default sign-up"
           role="button"
-          ng-click="modalCtrl.toggleModal($event)">Sign Up</a></li>
+          modal-control modal-id="signUp" modal-event="open">Sign Up</a></li>
     </ul>
     <!--<ul class="account-buttons user-links">
         <li class="profile-link"><a href="#">Collection</button></a></li>
@@ -28,19 +28,10 @@
   </div>
 </nav>
 
-<modal>
-  <div class="modal-header">
-    <a href="#"><img class="modal-logo" src="images/castaway_logo.png"></a>
-    <h4 class="modal-message">Nice to see you back!</h4>
-    <a href="#" ng-click="modalCtrl.toggleModal($event)"><i class="close-button fa fa-times-circle"></i></a>
-  </div>
+<modal modal-id="signIn" message="Welcome Back!">
   <ca-sign-in-form></ca-sign-in-form>
 </modal>
 
-<!--<modal>
-  <div class="modal-header">
-    <a href="#"><img class="modal-logo" src="images/castaway_logo.png"></a>
-    <h4 class="modal-message">Welcome to Castaway!</h4>
-  </div>
+<modal modal-id="signUp" message="Welcome to Castaway!">
   <ca-sign-up-form></ca-sign-up-form>
-</modal>-->
+</modal>

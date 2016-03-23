@@ -1,5 +1,14 @@
 <div class="access-window" ng-show="modalCtrl.modalVisible">
   <div class="authentication-window">
-  <div class="modal_content" ng-transclude></div>
+  <div class="modal-body">
+    <div class="modal-header">
+      <a href="#">
+          <img class="modal-logo" src="images/castaway_logo.png">
+      </a>
+      <h4 class="modal-message">{{modalCtrl.modalHeaderMessage}}</h4>
+    </div>
+    <a href="#" ng-click="modalCtrl.toggleModal($event)"><i class="close-button fa fa-times-circle"></i></a>
+    <div class="modal_content" ng-transclude></div>
+  </div>
   </div>
 </div>
