@@ -13,12 +13,12 @@
     </div>
     <div class="episode-info col-md-8">
       <div class="episode-top-info">
-        <a href="/#/user/index"><h4 class="podcast-title">{{station.station_title}}</h4></a>
+        <a ui-sref="podcast.podcastIndex({podcast_id: station.podcast_id})"><h4 class="podcast-title">{{station.station_title}}</h4></a>
         <div class="date-info">
           <h6 class="episode-date">{{station.station_date}}</h6>
         </div>
       </div>
-      <a href="/#/user/index"><h6 class="episode-title">{{station.station_creator}}</h6></a>
+      <a ui-sref="podcast.userIndex({user_id: station.user_id})"><h6 class="episode-title">{{station.station_creator}}</h6></a>
       <div class="seek-control">
         <div class="current-time">0:00</div>
         <div class="total-time">{{station.station_length}}</div>

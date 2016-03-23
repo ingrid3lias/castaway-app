@@ -16,7 +16,7 @@
         <a href="/#/podcast/index"><h4 class="podcast-title">{{review.review_title}}</h4></a>
         <div class="date-info"><h6 class="episode-date">{{review.review_date}}</h6></div>
       </div>
-      <a href="/#/user/index"><h6 class="episode-title">{{review.user_name}}</h6></a>
+      <a ui-sref="podcast.userIndex({user_id: review.user_id})"><h6 class="episode-title">{{review.user_name}}</h6></a>
       <div class="user-text"><h6>{{review.text}}</h6></div>
       <div class="episode-info-bottom">
         <div class="interactive-icons">

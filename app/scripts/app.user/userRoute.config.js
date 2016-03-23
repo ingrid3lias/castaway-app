@@ -43,6 +43,8 @@
         template: '<ca-user-review-index></ca-user-review-index>'
       })
      
+    
+    
       //User Collection
       .state('podcast.userCollection', {
         url: '/collection',
