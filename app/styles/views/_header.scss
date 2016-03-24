@@ -4,6 +4,10 @@
 
 //////// MODAL ////////
 
+.modal-body {
+  padding:  0;
+}
+
 .modal-header {
   height: 80px;
   width: 100%;
@@ -21,8 +25,8 @@
 
 .close-button {
   position: relative;
-  bottom: 15px;
-  left: 50px;
+  bottom: 80px;
+  left: 280px;
   color: #FFFFFF;
 }
 
