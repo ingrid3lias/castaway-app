@@ -45,8 +45,17 @@
       .state('podcast.podcastIndex.episodeIndex', {
         url: '/episode/:episode_id',
         views: {
+          'navigation': {
+            templateUrl: 'views/podcasts/shared/podcast-navigation.html',
+          },
           'header': {
             template: '<ca-episode-header></ca-episode-header>'
+          },
+          'sidebar': {
+            template: '<ca-podcast-sidebar></ca-podcast-sidebar>'
+          },
+          'content': {
+            templateUrl: 'views/podcasts/index.html'
           }
         }
       })
