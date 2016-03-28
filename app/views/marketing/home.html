@@ -11,7 +11,8 @@
       </div>
       <a 
         class="btn call-to-action" 
-        role="button">
+        role="button"
+        modal-control modal-id="signUp" modal-event="open">
         Sign Up For Free!</a>
       <h5 class="hidden-sm hidden-md hidden-lg">
         <a class="account-sign-in" href="#">Already have an account? <strong>Sign In!</strong></a>
@@ -66,7 +67,8 @@
     <p>We are always looking for new content. Whether you are a network or a lone voice on the waves, we offer excellent creator support and plenty of resources.</p>
     <a 
       class="btn call-to-action" 
-      role="button">
+      role="button"
+      modal-control modal-id="signUp" modal-event="open">
       Sign Up As A Creator!</a>
   </div>
   <div class="col-md-2"></div><!--- SPACER --->
@@ -82,7 +84,8 @@
       <p>Create stations, share your favorite episodes, and connect with podcasters. All for free.</p>
       <a 
         class="btn call-to-action final-btn" 
-        role="button">
+        role="button"
+        modal-control modal-id="signUp" modal-event="open">
         Start An Account!</a>
     </div>
   </div>   
@@ -111,3 +114,7 @@
     </div>
   </footer>
 </div>
+<!-- sign up modal -->
+<modal modal-id="signUp" message="Welcome to Castaway!">
+  <ca-sign-up-form></ca-sign-up-form>
+</modal>
