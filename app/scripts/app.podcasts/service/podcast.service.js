@@ -26,6 +26,11 @@
           url: 'https://sheetsu.com/apis/v1.0/3eaa67a7/rec_id/:rec_id',
           isArray: true
         },
+        'getEpisode': {
+          method: 'GET',
+          url: 'https://sheetsu.com/apis/v1.0/3eaa67a7/episode_id/:episode_id',
+          isArray: true
+        },
       }
     );
   };

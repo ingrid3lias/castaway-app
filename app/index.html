@@ -32,6 +32,12 @@
     <main role="main" ui-view="main">
         <!-- Content -->
     </main>
+    <modal modal-id="signIn" message="Welcome Back!">
+      <ca-sign-in-form></ca-sign-in-form>
+    </modal>
+    <modal modal-id="signUp" message="Welcome to Castaway!">
+      <ca-sign-up-form></ca-sign-up-form>
+    </modal>
 
 
     <!-- build:js scripts/vendor.js -->
@@ -93,6 +99,8 @@
 
       <!-- Episode -->
       <script src="scripts/app.podcasts/episode/episodeHeader.directive.js"></script>
+      <script src="scripts/app.podcasts/episode/episodeSidebar.directive.js"></script>
+      <script src="scripts/app.podcasts/episode/episodeIndex.directive.js"></script>
     
       <!-- Network -->
       <script src="scripts/app.network/networkRoute.config.js"></script>

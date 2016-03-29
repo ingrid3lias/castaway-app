@@ -42,20 +42,22 @@
         url: '/review',
         template: '<ca-podcast-review-index></ca-podcast-review-index>'
       })
-      .state('podcast.podcastIndex.episodeIndex', {
+      
+      //Episode Index
+      .state('podcast.episodeIndex', {
         url: '/episode/:episode_id',
         views: {
           'navigation': {
-            templateUrl: 'views/podcasts/shared/podcast-navigation.html',
+            templateUrl: 'views/podcasts/episode/episode-navigation.html',
           },
           'header': {
             template: '<ca-episode-header></ca-episode-header>'
           },
           'sidebar': {
-            template: '<ca-podcast-sidebar></ca-podcast-sidebar>'
+            template: '<ca-episode-sidebar></ca-episode-sidebar>'
           },
           'content': {
-            templateUrl: 'views/podcasts/index.html'
+            templateUrl: 'views/podcasts/episode/index.html'
           }
         }
       })
