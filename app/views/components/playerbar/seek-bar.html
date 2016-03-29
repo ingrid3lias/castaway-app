@@ -1,0 +1,14 @@
+
+<div class="seek-bar" ng-click="onClickSeekBar($event)">
+    <div class="fill" ng-style="fillStyle()"></div>
+    <div class="thumb" ng-style="thumbStyle()" ng-mousedown="trackThumb()"></div>
+</div>
+
+        <div class="seek-control">
+          <div class="current-time">0:00</div>
+          <div class="total-time">{{episode.episode_length}}</div>
+          <div class="seek-bar">
+            <div class="fill-bar"></div>
+            <div class="thumb-bar"></div>
+          </div>
+        </div> 
