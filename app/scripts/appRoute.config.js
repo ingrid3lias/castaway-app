@@ -7,7 +7,7 @@
 
     // Default URL tasks/index page.
     $urlRouterProvider.otherwise('/', '/home');
-    $urlRouterProvider.when('/', '/home');
+    // $urlRouterProvider.when('/', '/home');
 
     $stateProvider
       .state('base', {
@@ -40,7 +40,7 @@
           }
         }
       })
-     
+
 
   }
 })();
